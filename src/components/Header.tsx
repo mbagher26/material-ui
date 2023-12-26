@@ -16,44 +16,44 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { green, brown } from '@mui/material/colors';
 
 declare module '@mui/material/styles' {
-    interface PaletteColor {
-      darker?: string;
-    }
-  
-    interface SimplePaletteColorOptions {
-      darker?: string;
-    }
+  interface PaletteColor {
+    darker?: string;
   }
 
+  interface SimplePaletteColorOptions {
+    darker?: string;
+  }
+}
+
 const pages = ['تماس با ما', 'کلاس خصوصی زبان انگایسی', 'مقالات', 'دوره های آموزشی', 'صفحه اصلی'];
-// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const settings = ['درباره ما ', 'مسولیت اجتماعی', 'خدمات ما', 'نتایج زبان آموزان'];
 
 function ResponsiveAppBar() {
+
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-//   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
-//   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-//     setAnchorElNav(event.currentTarget);
-//   };
-//   const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-//     setAnchorElUser(event.currentTarget);
-//   };
+  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorElNav(event.currentTarget);
+  };
 
-//   const handleCloseNavMenu = () => {
-//     setAnchorElNav(null);
-//   };
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
 
-//   const handleCloseUserMenu = () => {
-//     setAnchorElUser(null);
-//   };
-
-
-  
   const theme = createTheme({
     palette: {
       primary: {
         light: brown[50],
-        
+
         dark: brown[700],
         darker: brown[900],
         main: green[400],
@@ -63,93 +63,104 @@ function ResponsiveAppBar() {
 
   return (
     <ThemeProvider theme={theme}>
-    <AppBar position="static">
-      <Container maxWidth="xl" sx={{ bgcolor: 'white'}}>
-        <Toolbar disableGutters >
-        <SearchIcon/>
-        <Button variant="contained" sx={{ color: 'black', bgcolor: 'lime' , margin:0.5, width:100, height: 50}} >پنل کاربری</Button>
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'black', display: 'block' }}
+      <AppBar position="static">
+        <Container maxWidth="xl" sx={{ bgcolor: 'white' }}>
+          <Toolbar disableGutters >
+            <SearchIcon />
+            <Button variant="contained" sx={{ color: 'black', bgcolor: 'lime', margin: 0.5, width: 100, height: 50 }} >پنل کاربری</Button>
+            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                color="inherit"
               >
-                {page}
-              </Button>
-            ))}
-          </Box>
-            <Button>
-                <img src="https://www.ravaan.co/wp-content/uploads/2023/05/Full_Farsi_White-copy.webp" alt="logo" width='80' height='50'/>
-            </Button>
-          {/* <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <MenuIcon />
               </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box> */}
-        </Toolbar>
-      </Container>
-    </AppBar>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'left',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'left',
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{
+                  display: { xs: 'block', md: 'none' },
+                }}
+              >
+                {pages.map((page) => (
+                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">{page}</Typography>
+                  </MenuItem>
+                ))}
+              </Menu>
+            </Box>
+
+            <Box sx={{marginLeft: 40, flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            {pages.map((page, indexChild) => (
+              
+              <div>
+                {indexChild === 1 || indexChild === 4 ? (
+
+                     <Button
+                     key={page}
+                     onClick={handleCloseNavMenu}
+                     sx={{ my: 2, color: 'black', display: 'block' }}
+                   >
+                     {page}
+                   </Button>
+                ) : (
+                  <div>
+                      <Button
+                        id="basic-button"
+                        aria-controls={open ? 'basic-menu' : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={open ? 'true' : undefined}
+                        onClick={handleClick}
+                        sx={{ my: 2, color: 'black', display: 'block' }}
+                      >
+                        {page}
+                      </Button>
+                      
+                      <Menu
+                        id="basic-menu"
+                        anchorEl={anchorEl}
+                        open={open}
+                        onClose={handleClose}
+                        MenuListProps={{
+                          'aria-labelledby': 'basic-button',
+                        }}
+                      >
+                        {settings.map((setting) => (
+                          <div key={setting}>
+                            <MenuItem onClick={handleClose}>
+                              <Typography textAlign="center">{setting}</Typography>
+                            </MenuItem>
+                          </div>
+                        ))}
+                      </Menu>
+                    </div>
+                )
+                }
+              </div>
+            ))}
+            </Box>
+            <Button>
+              <img src="https://www.ravaan.co/wp-content/uploads/2023/05/Full_Farsi_White-copy.webp" alt="logo" width='80' height='50' />
+            </Button>
+           
+          </Toolbar>
+        </Container>
+      </AppBar>
     </ThemeProvider>
   );
 }
