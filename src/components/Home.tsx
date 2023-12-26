@@ -8,7 +8,7 @@ const Home = () => {
         <React.Fragment>
             <CssBaseline />
             <Container maxWidth='xl'>
-                <section className='content'>
+                <section className='section-one'>
                     <p>آکادمی آورزش زبان روان</p>
                    <p>
                    آکادمی روان وب سایت تخصصی
