@@ -30,7 +30,6 @@ const Home = () => {
                         </div>
                     </section>
                 </main>
-                <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} />
             </Container>
         </React.Fragment>
     )
