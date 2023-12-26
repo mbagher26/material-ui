@@ -17,6 +17,16 @@ const Home = () => {
 
                    </p>
                 </section>
+                <section>
+                    <a href="">
+                        <img src="https://www.ravaan.co/wp-content/uploads/2023/04/%D8%AF%D9%88%D8%B1%D9%87-%D8%AC%D8%A7%D9%85%D8%B9-min.webp" alt="" />
+                    </a>
+                    <div>
+                        <p>دوره جامع آموزش زبان انگلیسی</p>
+                        <a href="">با استاد محمد کریمی</a>
+                        <a href="">مشاهده و ثبت نام دوره</a>
+                    </div>
+                </section>
                 <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} />
             </Container>
         </React.Fragment>
