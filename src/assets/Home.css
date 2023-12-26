@@ -16,3 +16,24 @@
 .section-one p {
     width: 1000px;
 }
+
+/* css for section-two */
+
+.section-two {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.section-two a img{
+    width: 600px;
+}
+
+.section-two div {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
