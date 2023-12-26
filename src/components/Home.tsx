@@ -17,7 +17,7 @@ const Home = () => {
 
                    </p>
                 </section>
-                <section>
+                <section className='section-two'>
                     <a href="">
                         <img src="https://www.ravaan.co/wp-content/uploads/2023/04/%D8%AF%D9%88%D8%B1%D9%87-%D8%AC%D8%A7%D9%85%D8%B9-min.webp" alt="" />
                     </a>
