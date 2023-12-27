@@ -65,7 +65,7 @@ const Home = () => {
                             >
                                 <Paper elevation={3}>
                                     <img src={image2} alt="" />
-                                    <div style={{ background: 'blue'}}>
+                                    <div>
                                     <p>دوره آموزش استپ آپ</p>
                                 </div>
                                 <div>
@@ -76,7 +76,7 @@ const Home = () => {
                                 </Paper>
                                 <Paper elevation={3}>
                                     <img src={image1} alt="" />
-                                    <div style={{ background: 'blue'}}>
+                                    <div>
                                     <p>دوره آموزش استپ آپ</p>
                                 </div>
                                 <div>
@@ -88,7 +88,7 @@ const Home = () => {
                                 
                                 <Paper elevation={3}>
                                     <img src={image4} alt="" />
-                                    <div style={{ background: 'blue'}}>
+                                    <div>
                                     <p>دوره آموزش استپ آپ</p>
                                 </div>
                                 <div>
@@ -102,7 +102,7 @@ const Home = () => {
                                 <Paper elevation={3}>
                                     <img src={image3} alt="" />
 
-                                <div style={{ background: 'blue'}}>
+                                <div>
                                     <p>دوره آموزش استپ آپ</p>
                                 </div>
                                 <div>
