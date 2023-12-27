@@ -58,10 +58,16 @@ const Home = () => {
                                     },
                                 }}
                             >
-                                <Paper elevation={3} />
-                                <Paper elevation={3} />
-                                <Paper elevation={3} />
-                                <Paper elevation={3} />
+                                <Paper elevation={3}>
+                                    <img src="https://www.ravaan.co/wp-content/uploads/2023/04/ezgif-5-e69c8be9fa.webp" alt="" />
+                                </Paper>
+                                <Paper elevation={3}>
+                                    <img src="https://www.ravaan.co/wp-content/uploads/2023/04/ezgif-5-e69c8be9fa.webp" alt="" />
+                                </Paper><Paper elevation={3}>
+                                    <img src="https://www.ravaan.co/wp-content/uploads/2023/04/ezgif-5-e69c8be9fa.webp" alt="" />
+                                </Paper><Paper elevation={3}>
+                                    <img src="https://www.ravaan.co/wp-content/uploads/2023/04/ezgif-5-e69c8be9fa.webp" alt="" />
+                                </Paper>
                             </Box>
                         </section>
                     </section>
