@@ -66,22 +66,22 @@ const Home = () => {
                                 <Paper elevation={3}>
                                     <img src={image2} alt="" />
                                     <div>
-                                    <p>دوره آموزش استپ آپ</p>
+                                    <p>دوره ۵۰۴ واژه ضروری در انگلیسی</p>
                                 </div>
                                 <div>
                                     <p>
-                                        <span>۹۰۰,۰۰۰ تومان</span>
+                                        <span>۱,۵۸۰,۰۰۰ </span>تومان
                                     </p>
                                 </div>
                                 </Paper>
                                 <Paper elevation={3}>
                                     <img src={image1} alt="" />
                                     <div>
-                                    <p>دوره آموزش استپ آپ</p>
+                                    <p>دوره آموزش فونتیک پلاس</p>
                                 </div>
                                 <div>
                                     <p>
-                                        <span>۹۰۰,۰۰۰ تومان</span>
+                                        <span>۸۹۰,۰۰۰ </span>تومان
                                     </p>
                                 </div>
                                 </Paper>
@@ -89,11 +89,11 @@ const Home = () => {
                                 <Paper elevation={3}>
                                     <img src={image4} alt="" />
                                     <div>
-                                    <p>دوره آموزش استپ آپ</p>
+                                    <p>دوره جامع فرزند دو زبانه</p>
                                 </div>
                                 <div>
                                     <p>
-                                        <span>۹۰۰,۰۰۰ تومان</span>
+                                        <span>۳۱۵۰,۰۰۰</span>تومان
                                     </p>
                                 </div>
                                 </Paper>
@@ -107,7 +107,7 @@ const Home = () => {
                                 </div>
                                 <div>
                                     <p>
-                                        <span>۹۰۰,۰۰۰ تومان</span>
+                                        <span>۹۰۰,۰۰۰</span>تومان
                                     </p>
                                 </div>
                                 </Paper>
