@@ -3,7 +3,12 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Paper from '@mui/material/Paper';
-import '../assets/Home.css'
+import '../assets/Home.css' 
+import image1 from '../assets/image1.png'
+import image2 from '../assets/image2.png'
+import image3 from '../assets/image3.png'
+import image4 from '../assets/image4.png'
+
 
 const Home = () => {
     return (
@@ -59,14 +64,52 @@ const Home = () => {
                                 }}
                             >
                                 <Paper elevation={3}>
-                                    <img src="https://www.ravaan.co/wp-content/uploads/2023/04/ezgif-5-e69c8be9fa.webp" alt="" />
+                                    <img src={image2} alt="" />
+                                    <div style={{ background: 'blue'}}>
+                                    <p>دوره آموزش استپ آپ</p>
+                                </div>
+                                <div>
+                                    <p>
+                                        <span>۹۰۰,۰۰۰ تومان</span>
+                                    </p>
+                                </div>
                                 </Paper>
                                 <Paper elevation={3}>
-                                    <img src="https://www.ravaan.co/wp-content/uploads/2023/04/ezgif-5-e69c8be9fa.webp" alt="" />
-                                </Paper><Paper elevation={3}>
-                                    <img src="https://www.ravaan.co/wp-content/uploads/2023/04/ezgif-5-e69c8be9fa.webp" alt="" />
-                                </Paper><Paper elevation={3}>
-                                    <img src="https://www.ravaan.co/wp-content/uploads/2023/04/ezgif-5-e69c8be9fa.webp" alt="" />
+                                    <img src={image1} alt="" />
+                                    <div style={{ background: 'blue'}}>
+                                    <p>دوره آموزش استپ آپ</p>
+                                </div>
+                                <div>
+                                    <p>
+                                        <span>۹۰۰,۰۰۰ تومان</span>
+                                    </p>
+                                </div>
+                                </Paper>
+                                
+                                <Paper elevation={3}>
+                                    <img src={image4} alt="" />
+                                    <div style={{ background: 'blue'}}>
+                                    <p>دوره آموزش استپ آپ</p>
+                                </div>
+                                <div>
+                                    <p>
+                                        <span>۹۰۰,۰۰۰ تومان</span>
+                                    </p>
+                                </div>
+                                </Paper>
+                                
+                                
+                                <Paper elevation={3}>
+                                    <img src={image3} alt="" />
+
+                                <div style={{ background: 'blue'}}>
+                                    <p>دوره آموزش استپ آپ</p>
+                                </div>
+                                <div>
+                                    <p>
+                                        <span>۹۰۰,۰۰۰ تومان</span>
+                                    </p>
+                                </div>
                                 </Paper>
                             </Box>
                         </section>
