@@ -102,3 +102,17 @@
     fill: white;
 
 } 
+
+/* css for section-foure */
+.section-foure {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.section-foure a img {
+    max-width: 1030px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px blue;
+
+}
