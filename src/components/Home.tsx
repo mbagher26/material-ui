@@ -9,6 +9,7 @@ import image1 from '../assets/image1.png'
 import image2 from '../assets/image2.png'
 import image3 from '../assets/image3.png'
 import image4 from '../assets/image4.png'
+import image5 from '../assets/image5.png'
 import  '@mui/material/colors';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 
@@ -161,7 +162,7 @@ const Home = () => {
                     </svg>
                     <section className='section-foure'>
                         <a href="">
-                            <img src="https://www.ravaan.co/wp-content/uploads/2023/04/20-min-1.webp" alt="" />
+                            <img src={image5} alt="" />
                         </a>
                     </section>
                 </main>
