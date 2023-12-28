@@ -144,7 +144,7 @@ const Home = () => {
                                 </Paper>
                             </Box>
                         </section>
-                        <section className='section-foure'>
+                        <section>
                             <Button variant="contained" disableElevation sx={{color: '#03AEC6',display: 'flex',
                                     margin: 'auto',
                                      
