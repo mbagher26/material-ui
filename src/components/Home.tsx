@@ -10,8 +10,10 @@ import image2 from '../assets/image2.png'
 import image3 from '../assets/image3.png'
 import image4 from '../assets/image4.png'
 import image5 from '../assets/image5.png'
-import  '@mui/material/colors';
+import '@mui/material/colors';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
+
 
 const Home = () => {
     return (
@@ -79,7 +81,7 @@ const Home = () => {
                                     <div className='div-a'>
                                         <a href="">
                                             <span>اطلاعات بیشتر</span>
-                                            <ChevronLeftIcon/>
+                                            <ChevronLeftIcon />
 
                                         </a>
                                     </div>
@@ -97,8 +99,8 @@ const Home = () => {
                                     <div className='div-a'>
                                         <a href="">
                                             <span>اطلاعات بیشتر</span>
-                                            <ChevronLeftIcon/>
-                                            
+                                            <ChevronLeftIcon />
+
                                         </a>
                                     </div>
                                 </Paper>
@@ -116,7 +118,7 @@ const Home = () => {
                                     <div className='div-a'>
                                         <a href="">
                                             <span>اطلاعات بیشتر</span>
-                                            <ChevronLeftIcon/>
+                                            <ChevronLeftIcon />
 
                                         </a>
                                     </div>
@@ -137,19 +139,20 @@ const Home = () => {
                                     <div className='div-a'>
                                         <a href="">
                                             <span>اطلاعات بیشتر</span>
-                                            
-                                            <ChevronLeftIcon/>
-                                            
+
+                                            <ChevronLeftIcon />
+
                                         </a>
                                     </div>
                                 </Paper>
                             </Box>
                         </section>
                         <section>
-                            <Button variant="contained" disableElevation sx={{color: '#03AEC6',display: 'flex',
-                                    margin: 'auto',
-                                     
-                                    }}>
+                            <Button variant="contained" disableElevation sx={{
+                                color: '#03AEC6', display: 'flex',
+                                margin: 'auto',
+
+                            }}>
                                 مشاهده همه دوره‌ها
                             </Button>
                         </section>
@@ -164,6 +167,56 @@ const Home = () => {
                         <a href="">
                             <img src={image5} alt="" />
                         </a>
+                    </section>
+                    <section className='section-five'>
+                        <div className='articles'>
+                            <p>مقالات</p>
+                            <div></div>
+                        </div>
+                        <Box
+                            sx={{
+                                display: 'flex',
+                                flexWrap: 'wrap',
+                                '& > :not(style)': {
+                                    m: 1,
+                                    width: 333,
+                                    height: 333,
+                                    borderRadius: 5,
+                                    border: 0,
+                                },
+                            }}
+                        >
+                            <Paper>
+                                <a href="">
+                                    <img src={image1} alt="" />
+                                    <div>
+                                        <p>دوره فونتیک پلاس</p>
+                                        <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)' }} />
+                                    </div>
+
+                                </a>
+                            </Paper>
+                            <Paper>
+                                <a href="">
+                                    <img src={image1} alt="" />
+
+                                    <div>
+                                        <p>دوره فونتیک پلاس</p>
+                                        <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)' }} />
+                                    </div>
+                                </a>
+                            </Paper>
+                            <Paper>
+                                <a href="">
+                                    <img src={image1} alt="" />
+
+                                    <div>
+                                        <p>دوره فونتیک پلاس</p>
+                                        <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)' }} />
+                                    </div>
+                                </a>
+                            </Paper>
+                        </Box>
                     </section>
                 </main>
 
