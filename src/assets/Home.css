@@ -127,6 +127,7 @@
 
 .section-five img {
     width: 333px;
+    height: 200px;
     border-radius: 20px 15px 0 0;
 }
 
@@ -150,4 +151,10 @@
 a p{
     color: black;
     font-size: x-large;
+}
+
+.div-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
