@@ -177,39 +177,41 @@ const Home = () => {
                             sx={{
                                 display: 'flex',
                                 flexWrap: 'wrap',
+                                
                                 '& > :not(style)': {
                                     m: 1,
                                     width: 333,
-                                    height: 333,
+                                    height: 320,
                                     borderRadius: 5,
                                     border: 0,
+                                    boxShadow: 109
                                 },
                             }}
                         >
                             <Paper>
                                 <a href="">
                                     <img src={image1} alt="دوره فونتیک پلاس" />
-                                    <div>
+                                    <div className='div-title'>
                                         <p>دوره فونتیک پلاس</p>
-                                        <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)' }} />
+                                        <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)' , width: 330, height:60 }} />
                                     </div>
                                 </a>
                             </Paper>
                             <Paper>
                                 <a href="">
                                     <img src={image1} alt="دوره فونتیک پلاس" />
-                                    <div>
+                                    <div className='div-title'>
                                         <p>دوره فونتیک پلاس</p>
-                                        <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)' }} />
+                                        <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)' , width: 330, height:60 }} />
                                     </div>
                                 </a>
                             </Paper>
                             <Paper>
                                 <a href="">
                                     <img src={image1} alt="دوره فونتیک پلاس" />
-                                    <div>
+                                    <div className='div-title'>
                                         <p>دوره فونتیک پلاس</p>
-                                        <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)' }} />
+                                        <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)' , width: 330, height:60}} />
                                     </div>
                                 </a>
                             </Paper>
