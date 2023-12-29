@@ -188,18 +188,7 @@ const Home = () => {
                         >
                             <Paper>
                                 <a href="">
-                                    <img src={image1} alt="" />
-                                    <div>
-                                        <p>دوره فونتیک پلاس</p>
-                                        <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)' }} />
-                                    </div>
-
-                                </a>
-                            </Paper>
-                            <Paper>
-                                <a href="">
-                                    <img src={image1} alt="" />
-
+                                    <img src={image1} alt="دوره فونتیک پلاس" />
                                     <div>
                                         <p>دوره فونتیک پلاس</p>
                                         <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)' }} />
@@ -208,8 +197,16 @@ const Home = () => {
                             </Paper>
                             <Paper>
                                 <a href="">
-                                    <img src={image1} alt="" />
-
+                                    <img src={image1} alt="دوره فونتیک پلاس" />
+                                    <div>
+                                        <p>دوره فونتیک پلاس</p>
+                                        <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)' }} />
+                                    </div>
+                                </a>
+                            </Paper>
+                            <Paper>
+                                <a href="">
+                                    <img src={image1} alt="دوره فونتیک پلاس" />
                                     <div>
                                         <p>دوره فونتیک پلاس</p>
                                         <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)' }} />
