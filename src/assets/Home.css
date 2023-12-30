@@ -156,5 +156,27 @@ a p{
 .div-title {
     display: flex;
     flex-direction: column;
+    align-items: center;    
+}
+
+/* css for section-six */
+.section-six{
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 1522px;
+    background-color: #F2F2F2;
+    margin-top: 50px;
+}
+
+.top-articles {
+    width: 400px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    background-color: white;
+    margin: auto;
+    border-radius: 15px;
 }
