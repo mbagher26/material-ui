@@ -177,7 +177,7 @@ const Home = () => {
                             sx={{
                                 display: 'flex',
                                 flexWrap: 'wrap',
-                                
+
                                 '& > :not(style)': {
                                     m: 1,
                                     width: 333,
@@ -193,7 +193,7 @@ const Home = () => {
                                     <img src={image1} alt="دوره فونتیک پلاس" />
                                     <div className='div-title'>
                                         <p>دوره فونتیک پلاس</p>
-                                        <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)' , width: 330, height:60 }} />
+                                        <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)', width: 330, height: 60 }} />
                                     </div>
                                 </a>
                             </Paper>
@@ -202,7 +202,7 @@ const Home = () => {
                                     <img src={image1} alt="دوره فونتیک پلاس" />
                                     <div className='div-title'>
                                         <p>دوره فونتیک پلاس</p>
-                                        <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)' , width: 330, height:60 }} />
+                                        <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)', width: 330, height: 60 }} />
                                     </div>
                                 </a>
                             </Paper>
@@ -211,11 +211,36 @@ const Home = () => {
                                     <img src={image1} alt="دوره فونتیک پلاس" />
                                     <div className='div-title'>
                                         <p>دوره فونتیک پلاس</p>
-                                        <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)' , width: 330, height:60}} />
+                                        <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)', width: 330, height: 60 }} />
                                     </div>
                                 </a>
                             </Paper>
                         </Box>
+                    </section>
+                    <section className='section-six'>
+                        import * as React from 'react';
+                        import Box from '@mui/material/Box';
+                        import Paper from '@mui/material/Paper';
+
+                        export default function SimplePaper() {
+
+                            <Box
+                                sx={{
+                                    display: 'flex',
+                                    flexWrap: 'wrap',
+                                    '& > :not(style)': {
+                                        m: 1,
+                                        width: 128,
+                                        height: 128,
+                                    },
+                                }}
+                            >
+                                <Paper elevation={0} />
+                                <Paper />
+                                <Paper elevation={3} />
+                            </Box>
+
+                        }
                     </section>
                 </main>
 
