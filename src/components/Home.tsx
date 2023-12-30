@@ -19,7 +19,7 @@ const Home = () => {
     return (
         <React.Fragment>
             <CssBaseline />
-            <Container maxWidth='xl'>
+            <Container maxWidth='xl' disableGutters>
                 <main className='main'>
                     <section className='section-one'>
                         <h2>آکادمی آورزش زبان روان</h2>
@@ -217,13 +217,17 @@ const Home = () => {
                             </Paper>
                         </Box>
                     </section>
+                    <div className='top-articles'>
+                                <p>بروزترین مقالات</p>
+                            </div>
                     <section className='section-six'>
-                       
-
+                                        
+                           
                             <Box
                                 sx={{
                                     display: 'flex',
                                     flexWrap: 'wrap',
+                                    marginTop: 15,
                                     '& > :not(style)': {
                                         m: 1,
                                         width: 300,
@@ -237,7 +241,9 @@ const Home = () => {
                                 <Paper elevation={3} />
 
                             </Box>
-
+                            <Button variant="contained" disableElevation>
+                                مشاهده همه مقالات
+                            </Button>
                     </section>
                        
                 </main>
