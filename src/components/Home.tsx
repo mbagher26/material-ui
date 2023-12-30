@@ -13,6 +13,10 @@ import image5 from '../assets/image5.png'
 import '@mui/material/colors';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
+import life from '../assets/life.png';
+import thanksgood from '../assets/thanksgood.png';
+import course from '../assets/course.png';
+import property from '../assets/property.png';
 
 
 const Home = () => {
@@ -231,19 +235,36 @@ const Home = () => {
                                 sx={{
                                     display: 'flex',
                                     flexWrap: 'wrap',
-                                    marginTop: 15,
-                                    marginBottom: 5,
+                                    marginTop: 10,
+                                    marginBottom: 7,
                                     '& > :not(style)': {
                                         m: 1,
                                         width: 330,
                                         height: 150,
+                                        borderRadius: 10,
                                     },
                                 }}
                             >
-                                <Paper elevation={3} />
-                                <Paper elevation={3}/>
-                                <Paper elevation={3} />
-                                <Paper elevation={3} />
+                                <Paper elevation={3}>
+                                    <a href="">
+                                        <img src={life} alt="" />
+                                    </a>
+                                </Paper>
+                                <Paper elevation={3}>
+                                    <a href="">
+                                        <img src={property} alt="" />
+                                    </a>
+                                </Paper>
+                                <Paper elevation={3}>
+                                    <a href="">
+                                        <img src={course} alt="" />
+                                    </a>
+                                </Paper>
+                                <Paper elevation={3}>
+                                    <a href="">
+                                        <img src={thanksgood} alt="" />
+                                    </a>
+                                </Paper>
 
                             </Box>
                             <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD'}}>
