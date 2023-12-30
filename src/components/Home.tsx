@@ -16,7 +16,11 @@ import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 
 
 const Home = () => {
+
+
+
     return (
+        
         <React.Fragment>
             <CssBaseline />
             <Container maxWidth='xl' disableGutters>
@@ -148,10 +152,10 @@ const Home = () => {
                             </Box>
                         </section>
                         <section>
-                            <Button variant="contained" disableElevation sx={{
+                            <Button variant="contained" disableElevation  sx={{
                                 color: '#03AEC6', display: 'flex',
-                                margin: 'auto',
-
+                                margin: 'auto'
+                                
                             }}>
                                 مشاهده همه دوره‌ها
                             </Button>
@@ -241,7 +245,7 @@ const Home = () => {
                                 <Paper elevation={3} />
 
                             </Box>
-                            <Button variant="contained" disableElevation>
+                            <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD'}}>
                                 مشاهده همه مقالات
                             </Button>
                     </section>
@@ -250,6 +254,7 @@ const Home = () => {
 
             </Container>
         </React.Fragment>
+        
     )
 }
 export default Home
