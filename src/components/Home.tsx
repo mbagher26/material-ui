@@ -18,14 +18,16 @@ import life from '../assets/life.png';
 import thanksgood from '../assets/thanksgood.png';
 import course from '../assets/course.png';
 import property from '../assets/property.png';
-
+import rahimi from '../assets/miss-rahimi.mp4';
+import rezayat from '../assets/rezayat-site-main.mp4';
+import satisfy from '../assets/Satisfy.mp4';
 
 const Home = () => {
 
 
 
     return (
-        
+
         <React.Fragment>
             <CssBaseline />
             <Container maxWidth='xl' disableGutters>
@@ -157,10 +159,10 @@ const Home = () => {
                             </Box>
                         </section>
                         <section>
-                            <Button variant="contained" disableElevation  sx={{
+                            <Button variant="contained" disableElevation sx={{
                                 color: '#03AEC6', display: 'flex',
                                 margin: 'auto'
-                                
+
                             }}>
                                 مشاهده همه دوره‌ها
                             </Button>
@@ -227,50 +229,50 @@ const Home = () => {
                         </Box>
                     </section>
                     <div className='top-articles'>
-                                <p>بروزترین مقالات</p>
-                            </div>
+                        <p>بروزترین مقالات</p>
+                    </div>
                     <section className='section-six'>
-                                        
-                           
-                            <Box
-                                sx={{
-                                    display: 'flex',
-                                    flexWrap: 'wrap',
-                                    marginTop: 10,
-                                    marginBottom: 7,
-                                    '& > :not(style)': {
-                                        m: 1,
-                                        width: 330,
-                                        height: 150,
-                                        borderRadius: 10,
-                                    },
-                                }}
-                            >
-                                <Paper elevation={3}>
-                                    <a href="">
-                                        <img src={life} alt="" />
-                                    </a>
-                                </Paper>
-                                <Paper elevation={3}>
-                                    <a href="">
-                                        <img src={property} alt="" />
-                                    </a>
-                                </Paper>
-                                <Paper elevation={3}>
-                                    <a href="">
-                                        <img src={course} alt="" />
-                                    </a>
-                                </Paper>
-                                <Paper elevation={3}>
-                                    <a href="">
-                                        <img src={thanksgood} alt="" />
-                                    </a>
-                                </Paper>
 
-                            </Box>
-                            <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD', marginBottom:5}}>
-                                مشاهده همه مقالات
-                            </Button>
+
+                        <Box
+                            sx={{
+                                display: 'flex',
+                                flexWrap: 'wrap',
+                                marginTop: 10,
+                                marginBottom: 7,
+                                '& > :not(style)': {
+                                    m: 1,
+                                    width: 330,
+                                    height: 150,
+                                    borderRadius: 10,
+                                },
+                            }}
+                        >
+                            <Paper elevation={3}>
+                                <a href="">
+                                    <img src={life} alt="" />
+                                </a>
+                            </Paper>
+                            <Paper elevation={3}>
+                                <a href="">
+                                    <img src={property} alt="" />
+                                </a>
+                            </Paper>
+                            <Paper elevation={3}>
+                                <a href="">
+                                    <img src={course} alt="" />
+                                </a>
+                            </Paper>
+                            <Paper elevation={3}>
+                                <a href="">
+                                    <img src={thanksgood} alt="" />
+                                </a>
+                            </Paper>
+
+                        </Box>
+                        <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD', marginBottom: 5 }}>
+                            مشاهده همه مقالات
+                        </Button>
                     </section>
                     <section className='section-seven'>
                         <div>
@@ -279,17 +281,38 @@ const Home = () => {
                         <div>
                             <a>دوره ۵۰ لغت ضروری زبان انگلیسی</a>
                             <p>در این دوره ۵۰ تا از کاربردی‌ترین لغات زبان انگلیسی که کاربردی در مکالمات روزمره و یا مطالعات انگلیسی که دارید هستند. این لغات در دل مثال‌ها و جملات به شما آموزش داده می‌شود. که در دل این جملات ۱۵۰ لغت دیگر هم یاد خواهید گرفت.</p>
-                            <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD', width: 180, height: 50}}>
-                                مشاهده و ثبت نام                            
+                            <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD', width: 180, height: 50 }}>
+                                مشاهده و ثبت نام
                             </Button>
                         </div>
                     </section>
-                       
+                    <section className='video'>
+                        <Box
+                            sx={{
+                                display: 'flex',
+                                flexWrap: 'wrap',
+                                justifyContent: 'space-evenly',
+                                marginTop: 20 ,
+                                marginBottom: 20,
+                                '& > :not(style)': {
+                                    m: 1,
+                                    width: 370,
+                                    height: 170,
+                                    borderRadius: 2.5,
+                                },
+                            }}
+                        >
+                            
+                                <video src={rahimi}  controls />
+                                <video src={satisfy}  controls />
+                                <video src={rezayat}  controls />
+                        </Box>
+                    </section>
                 </main>
 
             </Container>
         </React.Fragment>
-        
+
     )
 }
 export default Home
