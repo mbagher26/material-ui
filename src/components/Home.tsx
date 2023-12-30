@@ -10,6 +10,7 @@ import image2 from '../assets/image2.png'
 import image3 from '../assets/image3.png'
 import image4 from '../assets/image4.png'
 import image5 from '../assets/image5.png'
+import Artboard from '../assets/Artboard.webp'
 import '@mui/material/colors';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
@@ -267,9 +268,21 @@ const Home = () => {
                                 </Paper>
 
                             </Box>
-                            <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD'}}>
+                            <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD', marginBottom:5}}>
                                 مشاهده همه مقالات
                             </Button>
+                    </section>
+                    <section className='section-seven'>
+                        <div>
+                            <img src={Artboard} alt="۵۰ لغت ضروری" />
+                        </div>
+                        <div>
+                            <a>دوره ۵۰ لغت ضروری زبان انگلیسی</a>
+                            <p>در این دوره ۵۰ تا از کاربردی‌ترین لغات زبان انگلیسی که کاربردی در مکالمات روزمره و یا مطالعات انگلیسی که دارید هستند. این لغات در دل مثال‌ها و جملات به شما آموزش داده می‌شود. که در دل این جملات ۱۵۰ لغت دیگر هم یاد خواهید گرفت.</p>
+                            <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD', width: 180, height: 50}}>
+                                مشاهده و ثبت نام                            
+                            </Button>
+                        </div>
                     </section>
                        
                 </main>
