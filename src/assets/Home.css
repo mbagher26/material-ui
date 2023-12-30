@@ -167,6 +167,8 @@ a p{
     width: 1522px;
     background-color: #F2F2F2;
     margin-top: 50px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35) inset;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 }
 
 .top-articles {
@@ -180,3 +182,9 @@ a p{
     margin: auto;
     border-radius: 15px;
 }
+
+.section-six img {
+    width: 330px;
+    border-radius: 10px;
+}
+
