@@ -226,14 +226,16 @@ const Home = () => {
                                     flexWrap: 'wrap',
                                     '& > :not(style)': {
                                         m: 1,
-                                        width: 128,
-                                        height: 128,
+                                        width: 300,
+                                        height: 150,
                                     },
                                 }}
                             >
-                                <Paper elevation={0} />
-                                <Paper />
                                 <Paper elevation={3} />
+                                <Paper elevation={3}/>
+                                <Paper elevation={3} />
+                                <Paper elevation={3} />
+
                             </Box>
 
                     </section>
