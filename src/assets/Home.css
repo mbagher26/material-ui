@@ -221,3 +221,10 @@ a p{
     font-size: 32px;
     font-weight: bolder;
 }
+
+/* css for video section */
+
+.video {
+    width: 1200px;
+    margin: auto;
+}
