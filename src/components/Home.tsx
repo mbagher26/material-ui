@@ -232,9 +232,10 @@ const Home = () => {
                                     display: 'flex',
                                     flexWrap: 'wrap',
                                     marginTop: 15,
+                                    marginBottom: 5,
                                     '& > :not(style)': {
                                         m: 1,
-                                        width: 300,
+                                        width: 330,
                                         height: 150,
                                     },
                                 }}
