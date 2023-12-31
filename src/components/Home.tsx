@@ -21,7 +21,7 @@ import property from '../assets/property.png';
 import rahimi from '../assets/miss-rahimi.mp4';
 import rezayat from '../assets/rezayat-site-main.mp4';
 import satisfy from '../assets/Satisfy.mp4';
-
+import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';
 const Home = () => {
 
 
@@ -292,8 +292,8 @@ const Home = () => {
                                 display: 'flex',
                                 flexWrap: 'wrap',
                                 justifyContent: 'space-evenly',
-                                marginTop: 20 ,
-                                marginBottom: 20,
+                                marginTop: 20,
+                                marginBottom: 10,
                                 '& > :not(style)': {
                                     m: 1,
                                     width: 370,
@@ -302,11 +302,16 @@ const Home = () => {
                                 },
                             }}
                         >
-                            
-                                <video src={rahimi}  controls />
-                                <video src={satisfy}  controls />
-                                <video src={rezayat}  controls />
+
+                            <video src={rahimi} controls />
+                            <video src={satisfy} controls />
+                            <video src={rezayat} controls />
                         </Box>
+                    </section>
+                    <section className='result'>
+                        <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD', height: 50 }}>
+                            مشاهده نتایج دانشجویان آکادمی روان
+                        </Button>
                     </section>
                 </main>
 
