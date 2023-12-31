@@ -22,6 +22,10 @@ import rahimi from '../assets/miss-rahimi.mp4';
 import rezayat from '../assets/rezayat-site-main.mp4';
 import satisfy from '../assets/Satisfy.mp4';
 import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';
+import TextField from '@mui/material/TextField';
+import InputLabel from '@mui/material/InputLabel';
+
+
 const Home = () => {
 
 
@@ -313,6 +317,44 @@ const Home = () => {
                             مشاهده نتایج دانشجویان آکادمی روان
                         </Button>
                     </section>
+                    <section className='title-contact'>
+                        <p>دریافت مشاوره رایگان و تهیه دوره، اطلاعات زیر را تکمیل کنید.</p>
+                        <div className='icon'>
+                            <PanToolAltOutlinedIcon />
+                        </div>
+                    </section>
+                    <section className='contact'>
+                        <p>دریافت مشاوره رایگان برای شروع آموزش زبان انگلیسی فرم زیر را تکمیل کنید:</p>
+                        <Box
+                            sx={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'flex-start',
+                                width: 1000,
+                                margin: 'auto',
+                                '& > :not(style)': { m: 1 },
+                            }}
+                        >
+                            <InputLabel shrink htmlFor="نام و نام خانوادگی" sx={{color: 'white', fontSize: 25, bgcolor: 'ActiveCaption'}}>
+                                نام و نام خانوادگی:
+                            </InputLabel>
+                            <TextField
+                                sx={{ bgcolor: 'white', borderRadius: 1 }}
+                                id="demo-helper-text-aligned"
+                            />
+                            <InputLabel shrink htmlFor="شماره تماس" sx={{color: 'white', fontSize: 25}}>
+                                شماره تماس:
+                            </InputLabel>
+                            <TextField
+                                sx={{ bgcolor: 'white', borderRadius: 1}}
+                                id="demo-helper-text-aligned-no-helper"
+                            />
+                            <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD', height: 50, borderRadius: 5 }}>
+                                ثبت درخواست مشاوره
+                            </Button>
+                        </Box>
+                    </section>
+
                 </main>
 
             </Container>
