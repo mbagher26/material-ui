@@ -228,3 +228,16 @@ a p{
     width: 1200px;
     margin: auto;
 }
+
+/* css for result */
+
+.result {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    transform: rotate(180deg);
+}
