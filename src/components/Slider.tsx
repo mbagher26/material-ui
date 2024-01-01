@@ -1,6 +1,5 @@
 import Carousel from 'react-material-ui-carousel'
 import { Paper } from '@mui/material'
-
 interface itemProps {
     id: number,
     image: string,
@@ -36,7 +35,7 @@ export default Slider
 function Item({item}:{item: itemProps})
 {
     return (
-        <Paper>
+        <Paper sx={{boxShadow: 'unset'}}>
             <img src={item.image} alt={item.title} style={{width: '100%', height: '550px'}}/>
         </Paper>
     )
