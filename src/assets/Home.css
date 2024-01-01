@@ -24,19 +24,32 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    align-items: center;
+    background-color: #FFFCF0;
+    height: 400px;
 }
 
 .section-two a img{
     width: 600px;
+    border-radius: 10px;
 }
 
+.a-img {
+    display: flex;
+    align-items: center;
+    height: 400px;
+    background-color: #FFFEF8;
+}
 .section-two div {
     width: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    font-size: x-large;
+    font-size: xx-large;
+}
+
+.section-two div p {
+    font-size: 40px;
 }
 /* css for section three */
 .section-three {
