@@ -52,11 +52,20 @@
     font-size: 40px;
 }
 /* css for section three */
+
 .section-three {
     display: flex;
     flex-direction: column;
     background-color: rgb(124,87,230);
 }
+
+.svg{
+    width: calc(100% + 1.3px);
+    /* height: 195px; */
+    /* transform: translateX(-50%) rotateY(180deg); */
+    background-color: rgb(124,87,230);
+}
+
 
 .section-three-one {
     display: flex;
@@ -110,12 +119,6 @@
     color: white;
 }
 
-/* css for svg */
-.svg {
-    /* width: 1500px; */
-    fill: white;
-
-} 
 
 /* css for section-foure */
 .section-foure {
@@ -284,6 +287,14 @@ a p{
 
 .footer img {
     width: 150px;
+}
+
+svg {
+    display: block;
+    width: calc(100% + 1.3px);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .elementor-shape-fill {
