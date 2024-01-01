@@ -273,6 +273,15 @@ a p{
     background-image: url('https://www.ravaan.co/wp-content/uploads/2023/04/Zeinab-_1.webp');
 }
 
+.div-contact {
+    margin: auto;
+    width: 1000px;
+    height: 600px;
+    border-radius: 12px;
+    background-color: #000000;
+    opacity: 0.5;
+}
+
 .title-contact {
     display: flex;
     flex-direction: row-reverse;
