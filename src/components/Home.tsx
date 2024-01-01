@@ -39,19 +39,21 @@ const Home = () => {
                     <section className='section-one'>
                         <h2>آکادمی آموزش زبان روان</h2>
                         <p>
-                             آکادمی روان وب سایت تخصصی  <a href=""> آموزش زبان انگلیسی </a> 
+                            آکادمی روان وب سایت تخصصی  <a href=""> آموزش زبان انگلیسی </a>
                             است و در این زمینه بهترین دوره‌ها و آموزش‌ها را برای شما قرار داده است. سعی ما بر این است که به بهترین و راحت‌ترین شکل ممکن زبان انگلیسی را به شما آموزش دهیم. آکادمی روان صاحب بهترین پکیج آموزش زبان انگلیسی در خانه است و در این دوره به روش موازی ترکیبی زبان انگلیسی را به شما آموزش می‌دهد
 
                         </p>
                     </section>
                     <section className='section-two'>
-                        <a href="">
+                        <a href="" className='a-img'>
                             <img src="https://www.ravaan.co/wp-content/uploads/2023/04/%D8%AF%D9%88%D8%B1%D9%87-%D8%AC%D8%A7%D9%85%D8%B9-min.webp" alt="" />
                         </a>
                         <div>
                             <p>دوره جامع آموزش زبان انگلیسی</p>
                             <a href="">با استاد محمد کریمی</a>
-                            <a href="">مشاهده و ثبت نام دوره</a>
+                            <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD',width: 200, height: 50 }}>
+                                مشاهده و ثبت‌نام دوره
+                            </Button>
                         </div>
                     </section>
 
@@ -334,18 +336,18 @@ const Home = () => {
                                 '& > :not(style)': { m: 1 },
                             }}
                         >
-                            <InputLabel shrink htmlFor="نام و نام خانوادگی" sx={{color: 'white', transformOrigin: 'right'}}>
+                            <InputLabel shrink htmlFor="نام و نام خانوادگی" sx={{ color: 'white', transformOrigin: 'right' }}>
                                 نام و نام خانوادگی:
                             </InputLabel>
                             <TextField
-                                sx={{ bgcolor: 'white', borderRadius: 1,transformOrigin: 'right' }}
+                                sx={{ bgcolor: 'white', borderRadius: 1, transformOrigin: 'right' }}
                                 id="demo-helper-text-aligned"
                             />
-                            <InputLabel shrink htmlFor="شماره تماس" sx={{color: 'white',transformOrigin: 'right'}}>
+                            <InputLabel shrink htmlFor="شماره تماس" sx={{ color: 'white', transformOrigin: 'right' }}>
                                 شماره تماس:
                             </InputLabel>
                             <TextField
-                                sx={{ bgcolor: 'white', borderRadius: 1, transformOrigin: 'right'}}
+                                sx={{ bgcolor: 'white', borderRadius: 1, transformOrigin: 'right' }}
                                 id="demo-helper-text-aligned-no-helper"
                             />
                             <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD', height: 50, borderRadius: 5 }}>
