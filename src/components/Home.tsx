@@ -164,9 +164,14 @@ const Home = () => {
                         </section>
                         <section>
                             <Button variant="contained" disableElevation sx={{
-                                color: '#03AEC6', display: 'flex',
-                                margin: 'auto'
-
+                                display: 'flex',
+                                margin: 2,
+                                marginLeft: 'auto',
+                                marginRight: 'auto',
+                                bgcolor: '#11B9CD',
+                                width: 200,
+                                height: 50,
+                                
                             }}>
                                 مشاهده همه دوره‌ها
                             </Button>
@@ -324,6 +329,8 @@ const Home = () => {
                         </div>
                     </section>
                     <section className='contact'>
+                        <div className='div-contact'>
+
                         <p>دریافت مشاوره رایگان برای شروع آموزش زبان انگلیسی فرم زیر را تکمیل کنید:</p>
                         <Box
                             sx={{
@@ -349,10 +356,11 @@ const Home = () => {
                                 sx={{ bgcolor: 'white', borderRadius: 1, transformOrigin: 'right' }}
                                 id="demo-helper-text-aligned-no-helper"
                             />
-                            <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD', height: 50, borderRadius: 5 }}>
+                            <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD', height: 50, borderRadius: 2 }}>
                                 ثبت درخواست مشاوره
                             </Button>
                         </Box>
+                        </div>
                     </section>
 
                 </main>
