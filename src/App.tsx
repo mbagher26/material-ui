@@ -2,6 +2,7 @@ import './App.css'
 import ResponsiveAppBar from './components/Header'
 import Slider from './components/Slider'
 import Home from './components/Home'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
      <ResponsiveAppBar/>
      <Slider/>
      <Home/>
+     <Footer/>
     </>
   )
 }
