@@ -330,23 +330,23 @@ const Home = () => {
                                 display: 'flex',
                                 flexDirection: 'column',
                                 alignItems: 'flex-start',
-                                width: 1000,
+                                width: 1200,
                                 margin: 'auto',
                                 '& > :not(style)': { m: 1 },
                             }}
                         >
-                            <InputLabel shrink htmlFor="نام و نام خانوادگی" sx={{color: 'white', fontSize: 25, bgcolor: 'ActiveCaption'}}>
+                            <InputLabel shrink htmlFor="نام و نام خانوادگی" sx={{color: 'white', transformOrigin: 'right'}}>
                                 نام و نام خانوادگی:
                             </InputLabel>
                             <TextField
-                                sx={{ bgcolor: 'white', borderRadius: 1 }}
+                                sx={{ bgcolor: 'white', borderRadius: 1,transformOrigin: 'right' }}
                                 id="demo-helper-text-aligned"
                             />
-                            <InputLabel shrink htmlFor="شماره تماس" sx={{color: 'white', fontSize: 25}}>
+                            <InputLabel shrink htmlFor="شماره تماس" sx={{color: 'white',transformOrigin: 'right'}}>
                                 شماره تماس:
                             </InputLabel>
                             <TextField
-                                sx={{ bgcolor: 'white', borderRadius: 1}}
+                                sx={{ bgcolor: 'white', borderRadius: 1, transformOrigin: 'right'}}
                                 id="demo-helper-text-aligned-no-helper"
                             />
                             <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD', height: 50, borderRadius: 5 }}>
