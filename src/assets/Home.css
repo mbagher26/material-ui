@@ -258,3 +258,25 @@ a p{
     justify-content: center;
     align-items: center;
 }
+
+/* css for Footer */
+.footer {
+    background-color: #E6F4FF;
+}
+
+.footer img {
+    width: 150px;
+}
+
+.elementor-shape-fill {
+    fill: #fff;
+    transform-origin: center;
+    transform: rotate(0deg);
+}
+
+.paper {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: #E6F4FF;
+}
