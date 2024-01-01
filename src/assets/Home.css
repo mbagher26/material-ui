@@ -245,11 +245,15 @@ a p{
 /* css for contact */
 
 .contact {
+    max-width: 1000px;
+    height: 600px;
+    border-radius: 12px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: cadetblue;
+    background-image: url('https://www.ravaan.co/wp-content/uploads/2023/04/Zeinab-_1.webp');
 }
 
 .title-contact {
@@ -277,6 +281,17 @@ a p{
 .paper {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    direction: rtl;
     padding: 15px;
-    border: #E6F4FF;
 }
+
+.paper h3 {
+    font-size: x-large;
+}
+
+.paper p {
+    margin: 0;
+}
+
