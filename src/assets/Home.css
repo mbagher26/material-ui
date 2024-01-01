@@ -23,7 +23,7 @@
 .section-two {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #FFFCF0;
     height: 400px;
@@ -298,7 +298,7 @@ a p{
     width: 150px;
 }
 
-svg {
+.footer-svg {
     display: block;
     width: calc(100% + 1.3px);
     position: relative;
