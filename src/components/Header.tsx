@@ -172,8 +172,8 @@ function ResponsiveAppBar() {
           <Toolbar disableGutters >
             <SearchIcon />
             <Button variant="contained" sx={{ color: 'black', backgroundColor: '#11B9CD', margin: 0.5, width: 110, height: 45 }} >پنل کاربری</Button>
-            <Button>
-              <Box sx={{width:1100, marginLeft: 40, flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            <Button >
+              <Box sx={{bgcolor:'white', width:1100, marginLeft: 40, flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                 {
                   pages.map((page) => (
                     <NavigationItem
