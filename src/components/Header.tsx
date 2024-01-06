@@ -10,7 +10,19 @@ import MenuItem from '@mui/material/MenuItem';
 import SearchIcon from '@mui/icons-material/Search';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { green, brown } from '@mui/material/colors';
+import { Fab } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 
+
+
+
+const useStyles = makeStyles({
+  button: {
+    my: 2, 
+    color: 'black', 
+    display: 'block'
+  },
+});
 declare module '@mui/material/styles' {
   interface PaletteColor {
     darker?: string;
@@ -41,7 +53,7 @@ const pages = [
     ]
   },
   {
-    title: 'کلاس خصوصی زبان انگایسی'
+    title: 'کلاس خصوصی زبان انگلیسی'
   },
   {
     title: 'مقالات',
@@ -84,21 +96,22 @@ const pages = [
 ]
 
 const NavigationItem = ({ item, handleCloseNavMenu, handleClick, anchorEl }: { item: any, handleCloseNavMenu: any, handleClick: any, anchorEl: any }) => {
-
+  const classes = useStyles();
   const hasChildren = item.children && item.children.length > 0;
-
+  console.log(item)
   return (
     <div key={item.title}>
       {
         hasChildren ? (
           <div >
             <Button
+              disableFocusRipple
               id={`basic-button-${item.title}`}
               aria-controls={`basic-menu-${item.title}`}
               aria-haspopup="true"
               aria-expanded={Boolean(anchorEl) ? 'true' : undefined}
               onClick={handleClick}
-              sx={{ my: 2, color: 'black', display: 'block' }}
+              className={classes.button}
             >
               {item.title}
             </Button>
@@ -113,6 +126,8 @@ const NavigationItem = ({ item, handleCloseNavMenu, handleClick, anchorEl }: { i
               }}
             >
               {(item.children.map((child: any) => (
+                
+
                 <div key={child.title}>
                   <MenuItem onClick={handleCloseNavMenu}>
                     <Typography textAlign="center">{child.title}</Typography>
@@ -124,6 +139,7 @@ const NavigationItem = ({ item, handleCloseNavMenu, handleClick, anchorEl }: { i
           </div>
         ) : (
           <Button
+            disableFocusRipple
             key={item.title}
             onClick={handleCloseNavMenu}
             sx={{ my: 2, color: 'black', display: 'block' }}
@@ -138,8 +154,6 @@ const NavigationItem = ({ item, handleCloseNavMenu, handleClick, anchorEl }: { i
 
 function ResponsiveAppBar() {
 
-
-
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
@@ -149,9 +163,6 @@ function ResponsiveAppBar() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
-
-
 
   const theme = createTheme({
     palette: {
@@ -172,11 +183,14 @@ function ResponsiveAppBar() {
           <Toolbar disableGutters >
             <SearchIcon />
             <Button variant="contained" sx={{ color: 'black', backgroundColor: '#11B9CD', marginLeft:5, width: 110, height: 45 }} >پنل کاربری</Button>
-            <Button >
-              <Box sx={{bgcolor:'white', width:1100, marginLeft: 40, flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+
+            <Fab disableFocusRipple disableRipple sx={{width:1000 , marginLeft:40, backgroundColor: '#fff', boxShadow: 'none' }}>
+
+              <Box sx={{ width:1000, flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                 {
                   pages.map((page) => (
                     <NavigationItem
+                    key={page.title}
                     item={page}
                     handleCloseNavMenu={handleCloseNavMenu}
                     handleClick={handleOpenNavMenu}
@@ -186,7 +200,7 @@ function ResponsiveAppBar() {
                 }
               </Box>
               <img src="https://www.ravaan.co/wp-content/uploads/2023/05/Full_Farsi_White-copy.webp" alt="logo" width='80' height='50' />
-            </Button>
+            </Fab>
           </Toolbar>
         </Container>
       </AppBar>
