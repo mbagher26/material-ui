@@ -11,16 +11,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { green, brown } from '@mui/material/colors';
 import { Fab } from '@mui/material';
-import { makeStyles } from '@mui/styles';
 
 
-
-
-const useStyles = makeStyles({
-  button: {
-
-  },
-});
 declare module '@mui/material/styles' {
   interface PaletteColor {
     darker?: string;
