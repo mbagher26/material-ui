@@ -33,7 +33,8 @@ const useStyles = makeStyles({
         margin: '2px !important',
         marginLeft: 'auto !important',
         marginRight: 'auto !important',
-        marginBottom: '5px !important',
+        marginBottom: '15px !important',
+        marginTop: '15px !important',
         backgroundColor: '#11B9CD !important',
         maxWidth: 500, 
         height: 50 
@@ -41,6 +42,10 @@ const useStyles = makeStyles({
     btn_contact: {
         backgroundColor: '#11B9CD !important',
         height: 50  
+    },
+    input_label: {
+        color: 'white !important', 
+        transformOrigin: 'right !important'
     }
   });
 
@@ -351,14 +356,14 @@ const Home = () => {
                                 '& > :not(style)': { m: 1 },
                             }}
                         >
-                            <InputLabel shrink htmlFor="نام و نام خانوادگی" sx={{ color: 'white', transformOrigin: 'right' }}>
+                            <InputLabel shrink htmlFor="نام و نام خانوادگی" className={classes.input_label}>
                                 نام و نام خانوادگی:
                             </InputLabel>
                             <TextField
                                 sx={{ bgcolor: 'white', borderRadius: 1, transformOrigin: 'right' }}
                                 id="demo-helper-text-aligned"
                             />
-                            <InputLabel shrink htmlFor="شماره تماس" sx={{ color: 'white', transformOrigin: 'right' }}>
+                            <InputLabel shrink htmlFor="شماره تماس" className={classes.input_label}>
                                 شماره تماس:
                             </InputLabel>
                             <TextField
