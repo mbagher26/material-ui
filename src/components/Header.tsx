@@ -18,9 +18,7 @@ import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles({
   button: {
-    my: 2, 
-    color: 'black', 
-    display: 'block'
+
   },
 });
 declare module '@mui/material/styles' {
@@ -96,7 +94,7 @@ const pages = [
 ]
 
 const NavigationItem = ({ item, handleCloseNavMenu, handleClick, anchorEl }: { item: any, handleCloseNavMenu: any, handleClick: any, anchorEl: any }) => {
-  const classes = useStyles();
+
   const hasChildren = item.children && item.children.length > 0;
   console.log(item)
   return (
@@ -111,7 +109,9 @@ const NavigationItem = ({ item, handleCloseNavMenu, handleClick, anchorEl }: { i
               aria-haspopup="true"
               aria-expanded={Boolean(anchorEl) ? 'true' : undefined}
               onClick={handleClick}
-              className={classes.button}
+              sx={{    my: 2, 
+                color: 'black', 
+                display: 'block'}}
             >
               {item.title}
             </Button>
