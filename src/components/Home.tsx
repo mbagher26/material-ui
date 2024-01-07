@@ -24,11 +24,29 @@ import satisfy from '../assets/Satisfy.mp4';
 import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';
 import TextField from '@mui/material/TextField';
 import InputLabel from '@mui/material/InputLabel';
+import { makeStyles } from '@mui/styles';
 
+
+const useStyles = makeStyles({
+    btn: {
+        display: 'flex !important',
+        margin: '2px !important',
+        marginLeft: 'auto !important',
+        marginRight: 'auto !important',
+        marginBottom: '5px !important',
+        backgroundColor: '#11B9CD !important',
+        maxWidth: 500, 
+        height: 50 
+    },
+    btn_contact: {
+        backgroundColor: '#11B9CD !important',
+        height: 50  
+    }
+  });
 
 const Home = () => {
 
-
+    const classes = useStyles();
 
     return (
 
@@ -51,7 +69,7 @@ const Home = () => {
                         <div>
                             <p>دوره جامع آموزش زبان انگلیسی</p>
                             <a href="">با استاد محمد کریمی</a>
-                            <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD', width: 200, height: 50 }}>
+                            <Button variant="contained" disableElevation className={classes.btn} >
                                 مشاهده و ثبت‌نام دوره
                             </Button>
                         </div>
@@ -163,16 +181,7 @@ const Home = () => {
                             </Box>
                         </section>
                         <section>
-                            <Button variant="contained" disableElevation sx={{
-                                display: 'flex',
-                                margin: 2,
-                                marginLeft: 'auto',
-                                marginRight: 'auto',
-                                bgcolor: '#11B9CD',
-                                width: 200,
-                                height: 50,
-                                
-                            }}>
+                            <Button variant="contained" disableElevation className={classes.btn} >
                                 مشاهده همه دوره‌ها
                             </Button>
                         </section>
@@ -279,7 +288,7 @@ const Home = () => {
                             </Paper>
 
                         </Box>
-                        <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD', marginBottom: 5 }}>
+                        <Button variant="contained" disableElevation className={classes.btn} sx={{ bgcolor: '#11B9CD',  }}>
                             مشاهده همه مقالات
                         </Button>
                     </section>
@@ -290,7 +299,7 @@ const Home = () => {
                         <div>
                             <a>دوره ۵۰ لغت ضروری زبان انگلیسی</a>
                             <p>در این دوره ۵۰ تا از کاربردی‌ترین لغات زبان انگلیسی که کاربردی در مکالمات روزمره و یا مطالعات انگلیسی که دارید هستند. این لغات در دل مثال‌ها و جملات به شما آموزش داده می‌شود. که در دل این جملات ۱۵۰ لغت دیگر هم یاد خواهید گرفت.</p>
-                            <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD', width: 180, height: 50 }}>
+                            <Button variant="contained" disableElevation className={classes.btn}>
                                 مشاهده و ثبت نام
                             </Button>
                         </div>
@@ -318,7 +327,7 @@ const Home = () => {
                         </Box>
                     </section>
                     <section className='result'>
-                        <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD', height: 50 }}>
+                        <Button variant="contained" disableElevation className={classes.btn}>
                             مشاهده نتایج دانشجویان آکادمی روان
                         </Button>
                     </section>
@@ -356,7 +365,7 @@ const Home = () => {
                                 sx={{ bgcolor: 'white', borderRadius: 1, transformOrigin: 'right' }}
                                 id="demo-helper-text-aligned-no-helper"
                             />
-                            <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD', height: 50, borderRadius: 2 }}>
+                            <Button variant="contained" disableElevation className={classes.btn_contact}>
                                 ثبت درخواست مشاوره
                             </Button>
                         </Box>
