@@ -46,6 +46,9 @@ const useStyles = makeStyles({
     input_label: {
         color: 'white !important', 
         transformOrigin: 'right !important'
+    },
+    textfield: {
+        backgroundColor: 'white !important', 
     }
   });
 
@@ -360,14 +363,14 @@ const Home = () => {
                                 نام و نام خانوادگی:
                             </InputLabel>
                             <TextField
-                                sx={{ bgcolor: 'white', borderRadius: 1, transformOrigin: 'right' }}
+                                className={classes.textfield}
                                 id="demo-helper-text-aligned"
                             />
                             <InputLabel shrink htmlFor="شماره تماس" className={classes.input_label}>
                                 شماره تماس:
                             </InputLabel>
                             <TextField
-                                sx={{ bgcolor: 'white', borderRadius: 1, transformOrigin: 'right' }}
+                                className={classes.textfield}
                                 id="demo-helper-text-aligned-no-helper"
                             />
                             <Button variant="contained" disableElevation className={classes.btn_contact}>
