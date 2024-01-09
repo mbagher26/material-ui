@@ -176,7 +176,7 @@ function ResponsiveAppBar() {
             <SearchIcon />
             <Button variant="contained" sx={{ color: 'black', backgroundColor: '#11B9CD', marginLeft:5, width: 110, height: 45 }} >پنل کاربری</Button>
 
-            <Fab disableFocusRipple disableRipple sx={{width:1000 , marginLeft:40, backgroundColor: '#fff', boxShadow: 'none' }}>
+            <Fab  disableRipple sx={{width:1000 , marginLeft:40, backgroundColor: '#fff', boxShadow: 'none' }}>
 
               <Box sx={{ width:1000, flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                 {
