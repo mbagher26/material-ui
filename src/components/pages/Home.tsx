@@ -36,21 +36,21 @@ const useStyles = makeStyles({
         marginBottom: '15px !important',
         marginTop: '15px !important',
         backgroundColor: '#11B9CD !important',
-        maxWidth: 500, 
-        height: 50 
+        maxWidth: 500,
+        height: 50
     },
     btn_contact: {
         backgroundColor: '#11B9CD !important',
-        height: 50  
+        height: 50
     },
     input_label: {
-        color: 'white !important', 
+        color: 'white !important',
         transformOrigin: 'right !important'
     },
     textfield: {
-        backgroundColor: 'white !important', 
+        backgroundColor: 'white !important',
     }
-  });
+});
 
 const Home = () => {
 
@@ -82,7 +82,7 @@ const Home = () => {
                             </Button>
                         </div>
                     </section>
-                    
+
                     <section className='section-three'>
                         <svg className='svg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
                             <path className="elementor-shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
@@ -296,7 +296,7 @@ const Home = () => {
                             </Paper>
 
                         </Box>
-                        <Button variant="contained" disableElevation className={classes.btn} sx={{ bgcolor: '#11B9CD',  }}>
+                        <Button variant="contained" disableElevation className={classes.btn} sx={{ bgcolor: '#11B9CD', }}>
                             مشاهده همه مقالات
                         </Button>
                     </section>
@@ -348,35 +348,35 @@ const Home = () => {
                     <section className='contact'>
                         <div className='div-contact'>
 
-                        <p>دریافت مشاوره رایگان برای شروع آموزش زبان انگلیسی فرم زیر را تکمیل کنید:</p>
-                        <Box
-                            sx={{
-                                display: 'flex',
-                                flexDirection: 'column',
-                                alignItems: 'flex-start',
-                                width: 1200,
-                                margin: 'auto',
-                                '& > :not(style)': { m: 1 },
-                            }}
-                        >
-                            <InputLabel shrink htmlFor="نام و نام خانوادگی" className={classes.input_label}>
-                                نام و نام خانوادگی:
-                            </InputLabel>
-                            <TextField
-                                className={classes.textfield}
-                                id="demo-helper-text-aligned"
-                            />
-                            <InputLabel shrink htmlFor="شماره تماس" className={classes.input_label}>
-                                شماره تماس:
-                            </InputLabel>
-                            <TextField
-                                className={classes.textfield}
-                                id="demo-helper-text-aligned-no-helper"
-                            />
-                            <Button variant="contained" disableElevation className={classes.btn_contact}>
-                                ثبت درخواست مشاوره
-                            </Button>
-                        </Box>
+                            <p>دریافت مشاوره رایگان برای شروع آموزش زبان انگلیسی فرم زیر را تکمیل کنید:</p>
+                            <Box
+                                sx={{
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    alignItems: 'flex-start',
+                                    width: 1200,
+                                    margin: 'auto',
+                                    '& > :not(style)': { m: 1 },
+                                }}
+                            >
+                                <InputLabel shrink htmlFor="نام و نام خانوادگی" className={classes.input_label}>
+                                    نام و نام خانوادگی:
+                                </InputLabel>
+                                <TextField
+                                    className={classes.textfield}
+                                    id="demo-helper-text-aligned"
+                                />
+                                <InputLabel shrink htmlFor="شماره تماس" className={classes.input_label}>
+                                    شماره تماس:
+                                </InputLabel>
+                                <TextField
+                                    className={classes.textfield}
+                                    id="demo-helper-text-aligned-no-helper"
+                                />
+                                <Button variant="contained" disableElevation className={classes.btn_contact}>
+                                    ثبت درخواست مشاوره
+                                </Button>
+                            </Box>
                         </div>
                     </section>
 
