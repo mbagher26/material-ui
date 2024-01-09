@@ -3,7 +3,7 @@ import Slider from '../components/Slider'
 import Footer from '../components/Footer'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { green, brown } from '@mui/material/colors';
-import {  ReactElement } from 'react';
+import { ReactElement } from 'react';
 
 
 declare module '@mui/material/styles' {
@@ -16,7 +16,7 @@ declare module '@mui/material/styles' {
   }
 }
 
-function Layout({children}:{children:ReactElement}) {
+function Layout({ children }: { children: ReactElement }) {
   const theme = createTheme({
     palette: {
       primary: {
@@ -34,7 +34,7 @@ function Layout({children}:{children:ReactElement}) {
       <ThemeProvider theme={theme}>
         <ResponsiveAppBar />
         <Slider />
-            {children}
+        {children}
         <Footer />
       </ThemeProvider>
     </>

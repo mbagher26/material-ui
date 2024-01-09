@@ -74,14 +74,14 @@ const Home = () => {
                             </Button>
                         </div>
                     </section>
-                    <Courses/>
+                    <Courses />
                     <section className='section-foure'>
                         <a href="">
                             <img src={image5} alt="" />
                         </a>
                     </section>
-                    <Articles/>
-                   
+                    <Articles />
+
                     <section className='section-seven'>
                         <div>
                             <img src={Artboard} alt="۵۰ لغت ضروری" />
@@ -127,7 +127,7 @@ const Home = () => {
                             <PanToolAltOutlinedIcon />
                         </div>
                     </section>
-                    <ContactUs/>
+                    <ContactUs />
                 </main>
 
             </Container>

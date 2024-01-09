@@ -91,9 +91,11 @@ const NavigationItem = ({ item, handleCloseNavMenu, handleClick, anchorEl }: { i
               aria-haspopup="true"
               aria-expanded={Boolean(anchorEl) ? 'true' : undefined}
               onClick={handleClick}
-              sx={{    my: 2, 
-                color: 'black', 
-                display: 'block'}}
+              sx={{
+                my: 2,
+                color: 'black',
+                display: 'block'
+              }}
             >
               {item.title}
             </Button>
@@ -108,7 +110,7 @@ const NavigationItem = ({ item, handleCloseNavMenu, handleClick, anchorEl }: { i
               }}
             >
               {(item.children.map((child: any) => (
-                
+
 
                 <div key={child.title}>
                   <MenuItem onClick={handleCloseNavMenu}>
@@ -149,32 +151,32 @@ function ResponsiveAppBar() {
 
 
   return (
-      <AppBar position="fixed">
-        <Container maxWidth="xl" sx={{ bgcolor: 'white' }}>
-          <Toolbar disableGutters >
-            <SearchIcon />
-            <Button variant="contained" sx={{ color: 'black', backgroundColor: '#11B9CD', marginLeft:5, width: 110, height: 45 }} >پنل کاربری</Button>
+    <AppBar position="fixed">
+      <Container maxWidth="xl" sx={{ bgcolor: 'white' }}>
+        <Toolbar disableGutters >
+          <SearchIcon />
+          <Button variant="contained" sx={{ color: 'black', backgroundColor: '#11B9CD', marginLeft: 5, width: 110, height: 45 }} >پنل کاربری</Button>
 
-            <Fab  disableRipple sx={{width:1000 , marginLeft:40, backgroundColor: '#fff', boxShadow: 'none' }}>
+          <Fab disableRipple sx={{ width: 1000, marginLeft: 40, backgroundColor: '#fff', boxShadow: 'none' }}>
 
-              <Box sx={{ width:1000, flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                {
-                  pages.map((page) => (
-                    <NavigationItem
+            <Box sx={{ width: 1000, flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+              {
+                pages.map((page) => (
+                  <NavigationItem
                     key={page.title}
                     item={page}
                     handleCloseNavMenu={handleCloseNavMenu}
                     handleClick={handleOpenNavMenu}
                     anchorEl={anchorElNav}
-                    />
-                  ))
-                }
-              </Box>
-              <img src="https://www.ravaan.co/wp-content/uploads/2023/05/Full_Farsi_White-copy.webp" alt="logo" width='80' height='50' />
-            </Fab>
-          </Toolbar>
-        </Container>
-      </AppBar>
+                  />
+                ))
+              }
+            </Box>
+            <img src="https://www.ravaan.co/wp-content/uploads/2023/05/Full_Farsi_White-copy.webp" alt="logo" width='80' height='50' />
+          </Fab>
+        </Toolbar>
+      </Container>
+    </AppBar>
   );
 }
 export default ResponsiveAppBar;
