@@ -8,20 +8,10 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import SearchIcon from '@mui/icons-material/Search';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { green, brown } from '@mui/material/colors';
 import { Fab } from '@mui/material';
 
 
-declare module '@mui/material/styles' {
-  interface PaletteColor {
-    darker?: string;
-  }
 
-  interface SimplePaletteColorOptions {
-    darker?: string;
-  }
-}
 
 const pages = [
   {
@@ -156,20 +146,9 @@ function ResponsiveAppBar() {
     setAnchorElNav(null);
   };
 
-  const theme = createTheme({
-    palette: {
-      primary: {
-        light: brown[50],
 
-        dark: brown[700],
-        darker: brown[900],
-        main: green[400],
-      },
-    },
-  });
 
   return (
-    <ThemeProvider theme={theme}>
       <AppBar position="fixed">
         <Container maxWidth="xl" sx={{ bgcolor: 'white' }}>
           <Toolbar disableGutters >
@@ -196,7 +175,6 @@ function ResponsiveAppBar() {
           </Toolbar>
         </Container>
       </AppBar>
-    </ThemeProvider>
   );
 }
 export default ResponsiveAppBar;
