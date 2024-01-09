@@ -4,24 +4,24 @@ import Box from '@mui/material/Box';
 import { Button } from '@mui/material';
 import Container from '@mui/material/Container';
 import Paper from '@mui/material/Paper';
-import '../../assets/Home.css'
-import image1 from '../../assets/image1.png'
-import image2 from '../../assets/image2.png'
-import image3 from '../../assets/image3.png'
-import image4 from '../../assets/image4.png'
-import image5 from '../../assets/image5.png'
-import Artboard from '../../assets/Artboard.webp'
+import '../assets/Home.css'
+import image1 from '../assets/image1.png'
+import image2 from '../assets/image2.png'
+import image3 from '../assets/image3.png'
+import image4 from '../assets/image4.png'
+import image5 from '../assets/image5.png'
+import Artboard from '../assets/Artboard.webp'
 import '@mui/material/colors';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
-import life from '../../assets/life.png';
-import thanksgood from '../../assets/thanksgood.png';
-import course from '../../assets/course.png';
-import property from '../../assets/property.png';
-import rahimi from '../../assets/miss-rahimi.mp4';
-import rezayat from '../../assets/rezayat-site-main.mp4';
-import satisfy from '../../assets/Satisfy.mp4';
-import doreh from '../../assets/دوره-جامع-min.webp';
+import life from '../assets/life.png';
+import thanksgood from '../assets/thanksgood.png';
+import course from '../assets/course.png';
+import property from '../assets/property.png';
+import rahimi from '../assets/miss-rahimi.mp4';
+import rezayat from '../assets/rezayat-site-main.mp4';
+import satisfy from '../assets/Satisfy.mp4';
+import doreh from '../assets/دوره-جامع-min.webp';
 
 import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';
 import TextField from '@mui/material/TextField';
