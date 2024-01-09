@@ -3,18 +3,10 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import { Button } from '@mui/material';
 import Container from '@mui/material/Container';
-import Paper from '@mui/material/Paper';
 import '../assets/Home.css'
-import image1 from '../assets/image1.png'
-
 import image5 from '../assets/image5.png'
 import Artboard from '../assets/Artboard.webp'
 import '@mui/material/colors';
-import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
-import life from '../assets/life.png';
-import thanksgood from '../assets/thanksgood.png';
-import course from '../assets/course.png';
-import property from '../assets/property.png';
 import rahimi from '../assets/miss-rahimi.mp4';
 import rezayat from '../assets/rezayat-site-main.mp4';
 import satisfy from '../assets/Satisfy.mp4';
@@ -24,6 +16,7 @@ import TextField from '@mui/material/TextField';
 import InputLabel from '@mui/material/InputLabel';
 import { makeStyles } from '@mui/styles';
 import Courses from './Courses';
+import Articles from './Articels';
 
 
 const useStyles = makeStyles({
@@ -87,101 +80,8 @@ const Home = () => {
                             <img src={image5} alt="" />
                         </a>
                     </section>
-                    <section className='section-five'>
-                        <div className='articles'>
-                            <p>مقالات</p>
-                            <div></div>
-                        </div>
-                        <Box
-                            sx={{
-                                display: 'flex',
-                                flexWrap: 'wrap',
-
-                                '& > :not(style)': {
-                                    m: 1,
-                                    width: 333,
-                                    height: 320,
-                                    borderRadius: 5,
-                                    border: 0,
-                                    boxShadow: 109
-                                },
-                            }}
-                        >
-                            <Paper>
-                                <a href="">
-                                    <img src={image1} alt="دوره فونتیک پلاس" />
-                                    <div className='div-title'>
-                                        <p>دوره فونتیک پلاس</p>
-                                        <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)', width: 330, height: 60 }} />
-                                    </div>
-                                </a>
-                            </Paper>
-                            <Paper>
-                                <a href="">
-                                    <img src={image1} alt="دوره فونتیک پلاس" />
-                                    <div className='div-title'>
-                                        <p>دوره فونتیک پلاس</p>
-                                        <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)', width: 330, height: 60 }} />
-                                    </div>
-                                </a>
-                            </Paper>
-                            <Paper>
-                                <a href="">
-                                    <img src={image1} alt="دوره فونتیک پلاس" />
-                                    <div className='div-title'>
-                                        <p>دوره فونتیک پلاس</p>
-                                        <ArrowCircleLeftIcon sx={{ color: 'rgb(17,185,205)', width: 330, height: 60 }} />
-                                    </div>
-                                </a>
-                            </Paper>
-                        </Box>
-                    </section>
-                    <div className='top-articles'>
-                        <p>بروزترین مقالات</p>
-                    </div>
-                    <section className='section-six'>
-
-
-                        <Box
-                            sx={{
-                                display: 'flex',
-                                flexWrap: 'wrap',
-                                marginTop: 10,
-                                marginBottom: 7,
-                                '& > :not(style)': {
-                                    m: 1,
-                                    width: 330,
-                                    height: 150,
-                                    borderRadius: 10,
-                                },
-                            }}
-                        >
-                            <Paper elevation={3}>
-                                <a href="">
-                                    <img src={life} alt="" />
-                                </a>
-                            </Paper>
-                            <Paper elevation={3}>
-                                <a href="">
-                                    <img src={property} alt="" />
-                                </a>
-                            </Paper>
-                            <Paper elevation={3}>
-                                <a href="">
-                                    <img src={course} alt="" />
-                                </a>
-                            </Paper>
-                            <Paper elevation={3}>
-                                <a href="">
-                                    <img src={thanksgood} alt="" />
-                                </a>
-                            </Paper>
-
-                        </Box>
-                        <Button variant="contained" disableElevation className={classes.btn} sx={{ bgcolor: '#11B9CD', }}>
-                            مشاهده همه مقالات
-                        </Button>
-                    </section>
+                    <Articles/>
+                   
                     <section className='section-seven'>
                         <div>
                             <img src={Artboard} alt="۵۰ لغت ضروری" />
