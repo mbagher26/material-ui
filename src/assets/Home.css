@@ -61,9 +61,7 @@
 
 .svg{
     width: calc(100% + 1.3px);
-    /* height: 195px; */
-    /* transform: translateX(-50%) rotateY(180deg); */
-    background-color: rgb(124,87,230);
+    height: 120px; 
 }
 
 
@@ -307,7 +305,6 @@ a p{
 }
 
 .elementor-shape-fill {
-    fill: #fff;
     transform-origin: center;
     transform: rotate(0deg);
 }
