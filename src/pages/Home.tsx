@@ -21,6 +21,8 @@ import property from '../../assets/property.png';
 import rahimi from '../../assets/miss-rahimi.mp4';
 import rezayat from '../../assets/rezayat-site-main.mp4';
 import satisfy from '../../assets/Satisfy.mp4';
+import doreh from '../../assets/دوره-جامع-min.webp';
+
 import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';
 import TextField from '@mui/material/TextField';
 import InputLabel from '@mui/material/InputLabel';
@@ -72,7 +74,7 @@ const Home = () => {
                     </section>
                     <section className='section-two'>
                         <a href="" className='a-img'>
-                            <img src="https://www.ravaan.co/wp-content/uploads/2023/04/%D8%AF%D9%88%D8%B1%D9%87-%D8%AC%D8%A7%D9%85%D8%B9-min.webp" alt="" />
+                            <img src={doreh} alt="" />
                         </a>
                         <div>
                             <p>دوره جامع آموزش زبان انگلیسی</p>
