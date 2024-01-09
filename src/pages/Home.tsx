@@ -12,11 +12,11 @@ import rezayat from '../assets/rezayat-site-main.mp4';
 import satisfy from '../assets/Satisfy.mp4';
 import doreh from '../assets/دوره-جامع-min.webp';
 import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';
-import TextField from '@mui/material/TextField';
-import InputLabel from '@mui/material/InputLabel';
+
 import { makeStyles } from '@mui/styles';
 import Courses from './Courses';
 import Articles from './Articels';
+import ContactUs from './ContactUs';
 
 
 const useStyles = makeStyles({
@@ -127,41 +127,7 @@ const Home = () => {
                             <PanToolAltOutlinedIcon />
                         </div>
                     </section>
-                    <section className='contact'>
-                        <div className='div-contact'>
-
-                            <p>دریافت مشاوره رایگان برای شروع آموزش زبان انگلیسی فرم زیر را تکمیل کنید:</p>
-                            <Box
-                                sx={{
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    alignItems: 'flex-start',
-                                    width: 1200,
-                                    margin: 'auto',
-                                    '& > :not(style)': { m: 1 },
-                                }}
-                            >
-                                <InputLabel shrink htmlFor="نام و نام خانوادگی" className={classes.input_label}>
-                                    نام و نام خانوادگی:
-                                </InputLabel>
-                                <TextField
-                                    className={classes.textfield}
-                                    id="demo-helper-text-aligned"
-                                />
-                                <InputLabel shrink htmlFor="شماره تماس" className={classes.input_label}>
-                                    شماره تماس:
-                                </InputLabel>
-                                <TextField
-                                    className={classes.textfield}
-                                    id="demo-helper-text-aligned-no-helper"
-                                />
-                                <Button variant="contained" disableElevation className={classes.btn_contact}>
-                                    ثبت درخواست مشاوره
-                                </Button>
-                            </Box>
-                        </div>
-                    </section>
-
+                    <ContactUs/>
                 </main>
 
             </Container>
