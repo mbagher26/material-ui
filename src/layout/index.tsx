@@ -1,10 +1,9 @@
-import './App.css'
 import ResponsiveAppBar from '../components/Header'
 import Slider from '../components/Slider'
 import Footer from '../components/Footer'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { green, brown } from '@mui/material/colors';
-import { FunctionComponent, ReactElement } from 'react';
+import {  ReactElement } from 'react';
 
 
 declare module '@mui/material/styles' {
