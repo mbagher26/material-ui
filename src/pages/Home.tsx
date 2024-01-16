@@ -17,6 +17,7 @@ import { makeStyles } from '@mui/styles';
 import Courses from './Courses';
 import Articles from './Articels';
 import ContactUs from './ContactUs';
+import Btn from '../components/btn/Btn';
 
 
 const useStyles = makeStyles({
@@ -69,9 +70,10 @@ const Home = () => {
                         <div>
                             <p>دوره جامع آموزش زبان انگلیسی</p>
                             <a href="">با استاد محمد کریمی</a>
-                            <Button variant="contained" disableElevation className={classes.btn} >
+                            <Btn variant='contained' title='مشاهده و ثبت نام دوره' />
+                            {/* <Button variant="contained" disableElevation className={classes.btn} >
                                 مشاهده و ثبت‌نام دوره
-                            </Button>
+                            </Button> */}
                         </div>
                     </section>
                     <Courses />
