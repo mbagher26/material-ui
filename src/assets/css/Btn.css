@@ -1,0 +1,8 @@
+.btn {
+    display: flex;
+    margin: auto 2px;
+    margin-bottom: 15px;
+    background-color: #11B9CD;
+    max-width: 500px;
+    height: 50px;
+}
