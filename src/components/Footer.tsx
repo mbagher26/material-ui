@@ -3,7 +3,8 @@ import Paper from '@mui/material/Paper';
 import logo from '../assets/logo.webp';
 import enamad from '../assets/enamad.png'
 import { Button } from '@mui/material';
-import Footersvg from './icon/Footersvg';
+import Footersvg from '../assets/svg/Footersvg';
+
 
 const Footer = () => {
 
