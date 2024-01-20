@@ -1,0 +1,334 @@
+.main {
+    direction: rtl;
+}
+
+.section-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-one h2 {
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: "یکان بخ", Sans-serif;
+}
+
+.section-one p {
+    width: 1000px;
+}
+
+/* css for section-two */
+
+.section-two {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FFFCF0;
+    height: 400px;
+}
+
+.section-two a img{
+    width: 600px;
+    border-radius: 10px;
+}
+
+.a-img {
+    display: flex;
+    align-items: center;
+    height: 400px;
+    background-color: #FFFEF8;
+}
+.section-two div {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: xx-large;
+}
+
+.section-two div p {
+    font-size: 40px;
+}
+/* css for section three */
+
+.section-three {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(124,87,230);
+}
+
+.svg{
+    width: calc(100% + 1.3px);
+    height: 120px; 
+}
+
+
+.section-three-one {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.section-three-two img{
+    width: 300px;
+    height: 180px;
+    position: relative;
+    bottom: 40px;
+    right: 15px;
+    border-radius: 10px;
+}
+
+.section-three-two div {
+    color: rgb(122,122,122);
+}
+
+.div-p{
+    margin-right: 210px;
+}
+
+.bold {
+    font-weight: 900;
+    color: black;
+}
+
+.div-a{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(236,236,236);
+}
+
+.div-a a {
+    color: rgb(17,185,205);
+    display: flex;
+}
+
+.section-three-one div{
+    width: 50px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    margin-right: 150px;
+}
+
+.section-three-one h1 {
+    color: white;
+}
+
+.section-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* css for section-foure */
+.section-foure {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.section-foure a img {
+    max-width: 1030px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 1px blue;
+
+}
+
+/* css for section-five */
+
+.section-five {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-five img {
+    width: 333px;
+    height: 200px;
+    border-radius: 20px 15px 0 0;
+}
+
+.articles {
+    width: 1000px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    color: rgb(17,185,205);
+    font-size: 40px;
+}
+
+.articles div {
+    width: 40px;
+    height: 10px;
+    background-color: rgb(17,185,205);
+    border-radius: 10px;
+}
+
+a p{
+    color: black;
+    font-size: x-large;
+}
+
+.div-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+/* css for section-six */
+.section-six{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1522px;
+    background-color: #F2F2F2;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35) inset;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.top-articles {
+    width: 400px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    background-color: white;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.section-six img {
+    width: 330px;
+    border-radius: 10px;
+}
+
+/* css for section-seven */
+
+.section-seven{
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0px 0px 45px -7px rgba(0, 0, 0, 0.23);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: auto;
+    background-image: url('../assets/BG.png');
+}
+
+.section-seven div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 520px;
+    border: 2px black;
+    margin: 30px;
+}
+
+.section-seven img {
+    width: 500px;
+}
+
+.section-seven a {
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+/* css for video section */
+
+.video {
+    width: 1200px;
+    margin: auto;
+}
+
+/* css for result */
+
+.result {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    transform: rotate(180deg);
+}
+
+/* css for contact */
+
+.contact {
+    max-width: 1000px;
+    height: 600px;
+    border-radius: 12px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://www.ravaan.co/wp-content/uploads/2023/04/Zeinab-_1.webp');
+}
+
+.div-contact {
+    margin: auto;
+    width: 1000px;
+    height: 600px;
+    border-radius: 12px;
+    background-color: #000000;
+    opacity: 0.5;
+}
+
+.title-contact {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+/* css for Footer */
+.footer {
+    background-color: #E6F4FF;
+}
+
+.footer img {
+    width: 150px;
+}
+
+.footer-svg {
+    display: block;
+    width: calc(100% + 1.3px);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.elementor-shape-fill {
+    transform-origin: center;
+    transform: rotate(0deg);
+}
+
+.paper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    direction: rtl;
+    padding: 15px;
+}
+
+.paper h3 {
+    font-size: x-large;
+}
+
+.paper p {
+    margin: 0;
+}
+
