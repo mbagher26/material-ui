@@ -9,10 +9,12 @@ const useStyles = makeStyles({
 
     input_label: {
         color: 'white !important',
-        transformOrigin: 'right !important'
+        transformOrigin: 'right !important',
+        
     },
     textfield: {
         backgroundColor: 'white !important',
+        borderRadius: 5
     }
 });
 
@@ -27,14 +29,7 @@ const ContactUs = () => {
 
                     <p>دریافت مشاوره رایگان برای شروع آموزش زبان انگلیسی فرم زیر را تکمیل کنید:</p>
                     <Box
-                        sx={{
-                            display: 'flex',
-                            flexDirection: 'column',
-                            alignItems: 'flex-start',
-                            width: 1200,
-                            margin: 'auto',
-                            '& > :not(style)': { m: 1 },
-                        }}
+                     
                     >
                         <InputLabel shrink htmlFor="نام و نام خانوادگی" className={classes.input_label}>
                             نام و نام خانوادگی:
