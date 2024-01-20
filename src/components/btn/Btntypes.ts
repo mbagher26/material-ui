@@ -1,6 +1,6 @@
 interface IBtn {
     children?: any;
-    variant?:  "outlined" | "contained"| undefined;
+    variant?:  "outlined" | "contained"|"text"| undefined;
     isloading?: boolean;
     title?: string;
     onclick?: () => void;
