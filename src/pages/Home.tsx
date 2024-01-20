@@ -3,13 +3,13 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import '../assets/css/Home.css'
-import image5 from '../assets/image5.png'
-import Artboard from '../assets/Artboard.webp'
+import image5 from '../assets/images/image5.png'
+import Artboard from '../assets/images/Artboard.webp'
 import '@mui/material/colors';
 import rahimi from '../assets/miss-rahimi.mp4';
 import rezayat from '../assets/rezayat-site-main.mp4';
 import satisfy from '../assets/Satisfy.mp4';
-import doreh from '../assets/دوره-جامع-min.webp';
+import doreh from '../assets/images/دوره-جامع-min.webp';
 import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';
 import Courses from './Courses';
 import Articles from './Articels';
