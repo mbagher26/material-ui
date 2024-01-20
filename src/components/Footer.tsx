@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import logo from '../assets/logo.webp';
-import enamad from '../assets/enamad.png'
+import logo from '../assets/images/logo.webp';
+import enamad from '../assets/images/enamad.png'
 import Footersvg from '../assets/svg/Footersvg';
 import Btn from './btn/Btn';
 
