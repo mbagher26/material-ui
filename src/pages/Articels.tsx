@@ -2,9 +2,7 @@ import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import image1 from '../assets/image1.png'
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import { Button } from '@mui/material';
-import { makeStyles } from '@mui/styles';
-
+import Btn from '../components/btn/Btn';
 import life from '../assets/life.png';
 import thanksgood from '../assets/thanksgood.png';
 import course from '../assets/course.png';
@@ -12,23 +10,10 @@ import property from '../assets/property.png';
 
 
 
-const useStyles = makeStyles({
-    btn: {
-        display: 'flex !important',
-        margin: '2px !important',
-        marginLeft: 'auto !important',
-        marginRight: 'auto !important',
-        marginBottom: '15px !important',
-        marginTop: '15px !important',
-        backgroundColor: '#11B9CD !important',
-        maxWidth: 500,
-        height: 50
-    },
 
-});
 
 const Articles = () => {
-    const classes = useStyles();
+    
 
     return (
         <>
@@ -123,9 +108,8 @@ const Articles = () => {
                     </Paper>
 
                 </Box>
-                <Button variant="contained" disableElevation className={classes.btn} sx={{ bgcolor: '#11B9CD', }}>
-                    مشاهده همه مقالات
-                </Button>
+                <Btn variant='contained' title=' مشاهده همه مقالات'/>
+                
             </section>
         </>
     )
