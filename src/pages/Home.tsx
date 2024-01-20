@@ -6,9 +6,9 @@ import '../assets/css/Home.css'
 import image5 from '../assets/images/image5.png'
 import Artboard from '../assets/images/Artboard.webp'
 import '@mui/material/colors';
-import rahimi from '../assets/miss-rahimi.mp4';
-import rezayat from '../assets/rezayat-site-main.mp4';
-import satisfy from '../assets/Satisfy.mp4';
+import rahimi from '../assets/video/miss-rahimi.mp4';
+import rezayat from '../assets/video/rezayat-site-main.mp4';
+import satisfy from '../assets//video/Satisfy.mp4';
 import doreh from '../assets/images/دوره-جامع-min.webp';
 import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';
 import Courses from './Courses';

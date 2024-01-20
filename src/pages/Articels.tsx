@@ -1,12 +1,12 @@
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
-import image1 from '../assets/image1.png'
+import image1 from '../assets/images/image1.png'
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Btn from '../components/btn/Btn';
-import life from '../assets/life.png';
-import thanksgood from '../assets/thanksgood.png';
-import course from '../assets/course.png';
-import property from '../assets/property.png';
+import life from '../assets/images/life.png';
+import thanksgood from '../assets/images/thanksgood.png';
+import course from '../assets/images/course.png';
+import property from '../assets/images/property.png';
 
 
 

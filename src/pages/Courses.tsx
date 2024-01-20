@@ -2,10 +2,10 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import Btn from '../components/btn/Btn';
-import image1 from '../assets/image1.png'
-import image2 from '../assets/image2.png'
-import image3 from '../assets/image3.png'
-import image4 from '../assets/image4.png'
+import image1 from '../assets/images/image1.png'
+import image2 from '../assets/images/image2.png'
+import image3 from '../assets/images/image3.png'
+import image4 from '../assets/images/image4.png'
 import Topcourse from '../assets/svg/Topcourse';
 
 
