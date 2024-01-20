@@ -2,7 +2,7 @@ import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import '../assets/Home.css'
+import '../assets/css/Home.css'
 import image5 from '../assets/image5.png'
 import Artboard from '../assets/Artboard.webp'
 import '@mui/material/colors';

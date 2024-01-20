@@ -1,4 +1,4 @@
-import '../../assets/Home.css'
+import '../../assets/css/Home.css'
 
 const Topcourse = ({color,backgroundColor}:{color:string, backgroundColor:string}) => {
     return (

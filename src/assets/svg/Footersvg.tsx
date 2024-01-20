@@ -1,4 +1,4 @@
-import '../../assets/Home.css'
+import '../../assets/css/Home.css'
 
 const Footersvg = ({color,backgroundcolor}:{color:string,backgroundcolor:string}) => {
     return(
