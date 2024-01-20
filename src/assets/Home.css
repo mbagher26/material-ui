@@ -117,6 +117,12 @@
     color: white;
 }
 
+.section-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /* css for section-foure */
 .section-foure {
