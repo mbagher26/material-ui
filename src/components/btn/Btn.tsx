@@ -8,7 +8,6 @@ const useStyles = makeStyles({
   btn: {
       display: 'flex !important',
       margin: '2px !important',
-      marginRight: '10px !important',
       justifyContent: 'center !important',
       marginBottom: '15px !important',
       marginTop: '15px !important',
