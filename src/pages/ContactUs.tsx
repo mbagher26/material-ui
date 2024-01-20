@@ -1,17 +1,12 @@
 import TextField from '@mui/material/TextField';
 import InputLabel from '@mui/material/InputLabel';
-import { Button } from '@mui/material';
 import Box from '@mui/material/Box';
 import { makeStyles } from '@mui/styles';
-
+import Btn from '../components/btn/Btn';
 
 
 const useStyles = makeStyles({
 
-    btn_contact: {
-        backgroundColor: '#11B9CD !important',
-        height: 50
-    },
     input_label: {
         color: 'white !important',
         transformOrigin: 'right !important'
@@ -55,9 +50,8 @@ const ContactUs = () => {
                             className={classes.textfield}
                             id="demo-helper-text-aligned-no-helper"
                         />
-                        <Button variant="contained" disableElevation className={classes.btn_contact}>
-                            ثبت درخواست مشاوره
-                        </Button>
+                        <Btn variant='contained' title='ثبت درخواست مشاوره'/>
+                       
                     </Box>
                 </div>
             </section>
