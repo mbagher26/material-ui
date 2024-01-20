@@ -1,9 +1,7 @@
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import { Button } from '@mui/material';
-import { makeStyles } from '@mui/styles';
-
+import Btn from '../components/btn/Btn';
 import image1 from '../assets/image1.png'
 import image2 from '../assets/image2.png'
 import image3 from '../assets/image3.png'
@@ -12,23 +10,8 @@ import Topcourse from '../assets/svg/Topcourse';
 
 
 
-const useStyles = makeStyles({
-    btn: {
-        display: 'flex !important',
-        margin: '2px !important',
-        marginLeft: 'auto !important',
-        marginRight: 'auto !important',
-        marginBottom: '15px !important',
-        marginTop: '15px !important',
-        backgroundColor: '#11B9CD !important',
-        maxWidth: 500,
-        height: 50
-    },
-
-});
 const Courses = () => {
 
-    const classes = useStyles();
     return (
         <>
             <section className='section-three'>
@@ -132,10 +115,8 @@ const Courses = () => {
                         </Paper>
                     </Box>
                 </section>
-                <section>
-                    <Button variant="contained" disableElevation className={classes.btn} >
-                        مشاهده همه دوره‌ها
-                    </Button>
+                <section className='section-button'>
+                    <Btn variant='contained' title=' مشاهده همه دوره‌ها' />
                 </section>
             </section>
                 <Topcourse backgroundColor='#fff' color='#7C57E6'/>
