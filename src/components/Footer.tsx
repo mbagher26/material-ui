@@ -4,6 +4,7 @@ import logo from '../assets/logo.webp';
 import enamad from '../assets/enamad.png'
 import { Button } from '@mui/material';
 import Footersvg from '../assets/svg/Footersvg';
+import Btn from './btn/Btn';
 
 
 const Footer = () => {
@@ -50,9 +51,8 @@ const Footer = () => {
                     <h3>اطلاع از فروش ویژه</h3>
                     <label htmlFor="">ایمیل خود را وارد کنید!</label>
                     <input type="text" />
-                    <Button variant="contained" disableElevation sx={{ bgcolor: '#11B9CD', height: 50, borderRadius: 2 }}>
-                        به من اطلاع دهید!    
-                    </Button>
+                    <Btn variant='contained' title='به من اطلاع دهید!'/>
+                    
                 </Paper>
                 <Paper elevation={0} className='paper'>
                     <img src={logo} alt="Logo" />
