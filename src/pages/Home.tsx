@@ -1,7 +1,6 @@
 import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
-import { Button } from '@mui/material';
 import Container from '@mui/material/Container';
 import '../assets/Home.css'
 import image5 from '../assets/image5.png'
@@ -12,42 +11,17 @@ import rezayat from '../assets/rezayat-site-main.mp4';
 import satisfy from '../assets/Satisfy.mp4';
 import doreh from '../assets/دوره-جامع-min.webp';
 import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';
-
-import { makeStyles } from '@mui/styles';
 import Courses from './Courses';
 import Articles from './Articels';
 import ContactUs from './ContactUs';
 import Btn from '../components/btn/Btn';
 
 
-const useStyles = makeStyles({
-    btn: {
-        display: 'flex !important',
-        margin: '2px !important',
-        marginLeft: 'auto !important',
-        marginRight: 'auto !important',
-        marginBottom: '15px !important',
-        marginTop: '15px !important',
-        backgroundColor: '#11B9CD !important',
-        maxWidth: 500,
-        height: 50
-    },
-    btn_contact: {
-        backgroundColor: '#11B9CD !important',
-        height: 50
-    },
-    input_label: {
-        color: 'white !important',
-        transformOrigin: 'right !important'
-    },
-    textfield: {
-        backgroundColor: 'white !important',
-    }
-});
+
 
 const Home = () => {
 
-    const classes = useStyles();
+    
 
     return (
 
@@ -71,9 +45,6 @@ const Home = () => {
                             <p>دوره جامع آموزش زبان انگلیسی</p>
                             <a href="">با استاد محمد کریمی</a>
                             <Btn variant='contained' title='مشاهده و ثبت نام دوره' />
-                            {/* <Button variant="contained" disableElevation className={classes.btn} >
-                                مشاهده و ثبت‌نام دوره
-                            </Button> */}
                         </div>
                     </section>
                     <Courses />
@@ -91,9 +62,7 @@ const Home = () => {
                         <div>
                             <a>دوره ۵۰ لغت ضروری زبان انگلیسی</a>
                             <p>در این دوره ۵۰ تا از کاربردی‌ترین لغات زبان انگلیسی که کاربردی در مکالمات روزمره و یا مطالعات انگلیسی که دارید هستند. این لغات در دل مثال‌ها و جملات به شما آموزش داده می‌شود. که در دل این جملات ۱۵۰ لغت دیگر هم یاد خواهید گرفت.</p>
-                            <Button variant="contained" disableElevation className={classes.btn}>
-                                مشاهده و ثبت نام
-                            </Button>
+                            <Btn variant='contained' title='مشاهده و ثبت نام' />
                         </div>
                     </section>
                     <section className='video'>
@@ -119,9 +88,7 @@ const Home = () => {
                         </Box>
                     </section>
                     <section className='result'>
-                        <Button variant="contained" disableElevation className={classes.btn}>
-                            مشاهده نتایج دانشجویان آکادمی روان
-                        </Button>
+                    <Btn variant='contained' title='مشاهده نتایج دانشجویان آکادمی' />
                     </section>
                     <section className='title-contact'>
                         <p>دریافت مشاوره رایگان و تهیه دوره، اطلاعات زیر را تکمیل کنید.</p>
