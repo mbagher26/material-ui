@@ -13,6 +13,7 @@ const useStyles = makeStyles({
     },
     textfield: {
         backgroundColor: 'white !important',
+        borderRadius: 5,
                 
     },
     error: {
@@ -26,6 +27,7 @@ const useStyles = makeStyles({
         color: 'black',
         maxWidth: 230,
         borderRadius: 5,
+     
     }
 
 });
