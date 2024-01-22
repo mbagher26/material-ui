@@ -287,6 +287,11 @@ a p{
     padding: 10px;
 }
 
+.div-contact p {
+    color: #FFFEFF;
+    text-align: center;    
+}
+
 .title-contact {
     display: flex;
     flex-direction: row-reverse;
