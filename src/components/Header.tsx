@@ -76,65 +76,62 @@ const pages = [
 ]
 
 const NavigationItem = ({ item, handleCloseNavMenu, handleClick, anchorEl }: { item: any, handleCloseNavMenu: any, handleClick: any, anchorEl: any }) => {
-
   const hasChildren = item.children && item.children.length > 0;
-  console.log(item)
+
   return (
     <div key={item.title}>
-      {
-        hasChildren ? (
-          <div >
-            <Button
-              disableFocusRipple
-              id={`basic-button-${item.title}`}
-              aria-controls={`basic-menu-${item.title}`}
-              aria-haspopup="true"
-              aria-expanded={Boolean(anchorEl) ? 'true' : undefined}
-              onClick={handleClick}
-              sx={{
-                my: 2,
-                color: 'black',
-                display: 'block'
-              }}
-            >
-              {item.title}
-            </Button>
-
-            <Menu
-              id={`basic-menu-${item.title}`}
-              anchorEl={anchorEl}
-              open={Boolean(anchorEl)}
-              onClose={handleCloseNavMenu}
-              MenuListProps={{
-                'aria-labelledby': `basic-button-${item.title}`,
-              }}
-            >
-              {(item.children.map((child: any) => (
-
-
-                <div key={child.title}>
-                  <MenuItem onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{child.title}</Typography>
-                  </MenuItem>
-                </div>
-              )))
-              }
-            </Menu>
-          </div>
-        ) : (
+      {hasChildren ? (
+        <div>
           <Button
             disableFocusRipple
-            key={item.title}
-            onClick={handleCloseNavMenu}
-            sx={{ my: 2, color: 'black', display: 'block' }}
+            id={`basic-button-${item.title}`}
+            aria-controls={`basic-menu-${item.title}`}
+            aria-haspopup="true"
+            aria-expanded={Boolean(anchorEl) ? 'true' : undefined}
+            onClick={handleClick}
+            sx={{
+              my: 2,
+              color: 'black',
+              display: 'block',
+            }}
           >
             {item.title}
           </Button>
-        )
-      }
+
+          <Menu
+            id={`basic-menu-${item.title}`}
+            anchorEl={anchorEl}
+            open={Boolean(anchorEl)}
+            onClose={handleCloseNavMenu}
+            MenuListProps={{
+              'aria-labelledby': `basic-button-${item.title}`,
+            }}
+          >
+            {item.children.map((child: any) => (
+              <div key={child.title}>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{child.title}</Typography>
+                </MenuItem>
+              </div>
+            ))}
+          </Menu>
+        </div>
+      ) : (
+        <Button
+          disableFocusRipple
+          key={item.title}
+          onClick={handleCloseNavMenu}
+          sx={{ my: 2, color: 'black', display: 'block' }}
+        >
+          {item.title}
+        </Button>
+      )}
     </div>
-  )
-}
+  );
+};
+
+
+
 
 function ResponsiveAppBar() {
 
