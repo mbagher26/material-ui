@@ -146,6 +146,10 @@
     align-items: center;
 }
 
+.article-paper {
+    box-shadow: 10px 10px 50px 15px grey !important;
+}
+
 .section-five img {
     width: 333px;
     height: 200px;
