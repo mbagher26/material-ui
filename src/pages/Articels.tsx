@@ -32,12 +32,10 @@ const Articles = () => {
                             width: 333,
                             height: 320,
                             borderRadius: 5,
-                            border: 0,
-                            boxShadow: 109
                         },
                     }}
                 >
-                    <Paper>
+                    <Paper elevation={0} className="article-paper">
                         <a href="">
                             <img src={image1} alt="دوره فونتیک پلاس" />
                             <div className='div-title'>
@@ -46,7 +44,7 @@ const Articles = () => {
                             </div>
                         </a>
                     </Paper>
-                    <Paper>
+                    <Paper elevation={0} className="article-paper">
                         <a href="">
                             <img src={image1} alt="دوره فونتیک پلاس" />
                             <div className='div-title'>
@@ -55,7 +53,7 @@ const Articles = () => {
                             </div>
                         </a>
                     </Paper>
-                    <Paper>
+                    <Paper elevation={0} className="article-paper">
                         <a href="">
                             <img src={image1} alt="دوره فونتیک پلاس" />
                             <div className='div-title'>
