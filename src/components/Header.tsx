@@ -90,29 +90,18 @@ function ResponsiveAppBar() {
 
   const open = Boolean(anchorEl);
 
-  const handleClick = (item: any, index: any) => {
-    // setAnchorEl(event.currentTarget);
-    item.children ? (
-      setShowItem(index)
-    ) : (
-      console.log("Change Route To item.url")
-    )
+  const handleClick = (event: any, item: any, index: any) => {
+    setAnchorEl(event.currentTarget);
+    if (item.children) {
+      setShowItem(index);
+    } else {
+      console.log("Change Route To", item.url);
+    }
   };
 
   const handleClose = () => {
-    setAnchorEl(null);
+    setAnchorEl(null); // Close the menu by resetting the anchor element
   };
-
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
 
 
   return (
@@ -126,78 +115,46 @@ function ResponsiveAppBar() {
             {
               pages.map((page: any, index: any) => (
                 <>
-                  <Button
-                    key={index}
-                    id={`basic-menu-${index}` }
-                    aria-controls={open ? 'basic-menu' : undefined}
-                    aria-expanded={open ? 'true' : undefined}
-                    onClick={() => handleClick(page, index)}
-                    aria-haspopup="true"
-                  >
-
-
-                    {
-                      page.children && showItem === index && (
-                        page.children.map((child: any, ii: any) => (
-                          // <div key={ii}>{child.title}</div>
-                          <Menu
-                            key={ii}
-                            id={`basic-menu-${index}`}
-                            anchorEl={anchorEl}
-                            open={open}
-
-                            MenuListProps={{
-                              'aria-labelledby': 'basic-button',
-                            }}
-                          >
-                            {child.title}
-                          </Menu>
-                        ))
-                      )
-                    }
-                  </Button>
-                  {/* {page.children ?
-                      (
-                        <div key={index}>
-                          <Button
-                            key={page.title}
-                            id="basic-button"
-                            aria-controls={open ? 'basic-menu' : undefined}
-                            aria-haspopup="true"
-                            aria-expanded={open ? 'true' : undefined}
-                            onClick={handleClick}
-                          >
-                            {page.title}
-                          </Button>
-                          <Menu
-                            id="basic-menu"
-                            anchorEl={anchorEl}
-                            open={open}
-                            onClose={handleClose}
-                            MenuListProps={{
-                              'aria-labelledby': 'basic-button',
-                            }}
-                          >
-                            {page.children.map(child =>
-
-                              <MenuItem key={child.title} onClick={handleClose}>
-                                <Typography key={child.title} textAlign="center">{child.title}</Typography>
-                              </MenuItem>
-
-                            )}
-                          </Menu>
-                        </div>
-                      ) : (
-                        <Button
-                          disableFocusRipple
-                          key={page.id}
-                          onClick={handleCloseNavMenu}
-                          sx={{ my: 2, color: 'black', display: 'block' }}
+                
+                  {page.children ? (
+                    <>
+                      <Button
+                        sx={{ my: 2, color: 'black', display: 'block' }}
+                        key={index}
+                        id={`basic-menu-${index}`}
+                        aria-controls={open ? `basic-menu-${index}` : undefined}
+                        aria-expanded={open ? 'true' : undefined}
+                        onClick={(event) => handleClick(event, page, index)}
+                        aria-haspopup="true"
+                      >
+                        <span>{page.title}</span>
+                      </Button>
+                      {page.children && showItem === index && (
+                        <Menu
+                          id={`basic-menu-${index}`}
+                          anchorEl={anchorEl}
+                          open={Boolean(anchorEl) && open} // Open the menu only if anchorEl is not null
+                          onClose={handleClose} // Close the menu when clicking outside of it or when an item is clicked
+                          MenuListProps={{
+                            'aria-labelledby': `basic-menu-${index}`,
+                          }}
                         >
-                          {page.title}
-                        </Button>
-                      )
-                    } */}
+                          {page.children.map((child: any) => (
+                            <MenuItem onClick={handleClose}>{child.title}</MenuItem>
+                          ))}
+                        </Menu>
+                      )}
+                    </>
+                  ) : (
+                    <Button
+                      disableFocusRipple
+                      key={page.id}
+                      onClick={handleClose}
+                      sx={{ my: 2, color: 'black', display: 'block' }}
+                    >
+                      {page.title}
+                    </Button>
+                  )}
                 </>
               ))
             }
